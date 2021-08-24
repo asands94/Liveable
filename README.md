@@ -54,9 +54,12 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+| Axios | _Lorem ipsum dolor sit amet, consectetur._ |
+|     bcrypt      | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Rails      | _Lorem ipsum dolor sit amet, consectetur._ |
+|           | _Lorem ipsum dolor sit amet, consectetur._ |
+|     rack-cors      | _Lorem ipsum dolor sit amet, consectetur._ |
+|     jwt      | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -157,20 +160,39 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create backend schema, models, controllers    |    H     |     2 hrs      |      hrs     |     hrs    |
-| Create services folder    |    H     |     3 hrs      |      hrs     |     hrs    |
-| Create container folder |    H     |     1 hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-|  |    H     |      hrs      |      hrs     |     hrs     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Create backend schema, models, controllers    |    H     |      hrs      |      hrs     |     hrs    |
+| Create services folder and connect frontend and backend   |    H     |      hrs      |      hrs     |     hrs    |
+| Create container folder and make API calls |    H     |      hrs      |      hrs     |     hrs     |
+| Navbar - signed in view |    H     |      hrs      |      hrs     |     hrs     |
+| Navbar - signed out view |    H     |      hrs      |      hrs     |     hrs     |
+| Sign Up JS |    H     |      hrs      |      hrs     |     hrs     |
+| Login JS |    H     |      hrs      |      hrs     |     hrs     |
+| Create posts functionality |    H     |      hrs      |      hrs     |     hrs     |
+| Show posts functionality |    H     |      hrs      |      hrs     |     hrs     |
+| Update posts functionality |    H     |      hrs      |      hrs     |     hrs     |
+| Delete posts functionality |    H     |      hrs      |      hrs     |     hrs     |
+| Create profile page |    H     |      hrs      |      hrs     |     hrs     |
+| Home page - signed in view |    H     |      hrs      |      hrs     |     hrs     |
+| Home page - signed out view |    H     |      hrs      |      hrs     |     hrs     |
+| Global CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Create posts CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Show posts CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Update posts CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Delete posts CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Profile page CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Sign Up CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Login CSS |    H     |      hrs      |      hrs     |     hrs     |
+| Phone media query  |    H     |      hrs      |      hrs     |     hrs     |
+| Tablet media query  |    H     |      hrs      |      hrs     |     hrs     |
+| Seed database and check backend routes |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV - Add share button |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV - users add image from computer |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV - generate random username on sign up |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
+| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
+| TOTAL               |          |      hrs      |      hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
