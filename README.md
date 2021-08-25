@@ -26,7 +26,7 @@
 
 ## MVP
 
-The **Liveable** MVP is to allow authorized users to create, read, update, and delete their posts as well as see details of an individual post. Users will be able to use the applicatiion on desktop, mobile, or a tablet. Flexbox and grid will be used for styling. 
+The **Liveable** MVP is to allow authorized users to create, read, update, and delete their posts as well as see details of an individual post. Users will be able to use the applicatiion on desktop, mobile, or a tablet. Flexbox and grid will be used for styling. At least 8 rendered components. 
 <br>
 
 ### Goals
@@ -45,7 +45,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | Frontend framwork |
-|   React Router   | Frontend routing |
+|   React Router   | Client side routing |
 | Axios | API interaction |
 |     bcrypt      | Password security |
 |     Rails      | Backend framwork |
