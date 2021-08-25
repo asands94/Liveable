@@ -255,7 +255,7 @@ src
 
 #### ERD Model
 
-<img src="https://i.imgur.com/pnk2vZw.png" height="400">
+<img src="https://i.imgur.com/qg4OKRF.png" width="300">
 <br>
 
 ***
