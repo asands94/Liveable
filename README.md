@@ -67,69 +67,91 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 
 <img src="https://i.imgur.com/XXd9LPB.png" width="300">
+
 - Desktop/tablet horizontal Landing
 
 <img src="https://i.imgur.com/FqJh665.png" width="300">
+
 - Desktop/tablet horizontal Homepage Top (logged out)
 
 <img src="https://i.imgur.com/tO1kCFh.png" width="300">
+
 - Desktop/tablet horizontal Sign Up
 
 <img src="https://i.imgur.com/IYrySKh.png" width="300">
+
 - Desktop/tablet horizontal Login
 
 <img src="https://i.imgur.com/aDa9hir.png" width="300">
+
 - Desktop/tablet horizontal Homepage Top (logged in)
 
 <img src="https://i.imgur.com/aLKClxV.png" width="300">
+
 - Desktop/tablet horizontal Homepage Bottom (logged out)
 
 <img src="https://i.imgur.com/JwruFTW.png" width="300">
+
 - Desktop/tablet horizontal Homepage Bottom (logged in)
 
 <img src="https://i.imgur.com/wSH6pSM.png" width="300">
+
 - Desktop/tablet horizontal All Posts Page
 
 <img src="https://i.imgur.com/NTNiZKv.png" width="300">
+
 - Desktop/tablet horizontal All Posts page with detail modal
 
 <img src="https://i.imgur.com/KiuaRsj.png" width="300">
+
 - Desktop/tablet horizontal User Profile Page
 
 <img src="https://i.imgur.com/YVI5mgP.png" width="300">
+
 - Desktop/tablet horizontal About Page
 
 <img src="https://i.imgur.com/LJiVZua.png" width="300">
+
 - Mobile/tablet vertical Landing
 
 <img src="https://i.imgur.com/OMYhpk4.png" width="300">
+
 - Mobile/tablet vertical Homepage Top (logged out)
 
 <img src="https://i.imgur.com/9Ro6VeV.png" width="300">
+
 - Mobile/tablet vertical Sign Up
 
 <img src="https://i.imgur.com/nbeMWcB.png" width="300">
+
 - Mobile/tablet vertical Login
 
 <img src="https://i.imgur.com/LscCoGs.png" width="300">
+
 - Mobile/tablet vertical Homepage Top (logged in)
 
 <img src="https://i.imgur.com/fDeITVG.png" width="300">
+
 - Mobile/tablet vertical Homepage Bottom (logged out)
 
 <img src="https://i.imgur.com/eNuGyt7.png" width="300">
+
 - Mobile/tablet vertical Homepage Bottom (logged in)
 
 <img src="https://i.imgur.com/XdKsboj.png" width="300">
+
 - Mobile/tablet vertical All Posts Page
 
 <img src="https://i.imgur.com/zEzxaSj.png" width="300">
+
 - Mobile/tablet vertical All Posts page with detail modal
 
 <img src="https://i.imgur.com/vBABNeN.png" width="300">
+
 - Mobile/tablet vertical User Profile Page
 
 <img src="https://i.imgur.com/ejy1Isr.png" width="300">
+
 - Mobile/tablet vertical About Page
 
 #### Component Tree
