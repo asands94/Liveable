@@ -221,7 +221,7 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create backend schema, models    |    H     |      1hrs      |      .5hrs     |     hrs    |
-| Create backend routes, controllers    |    H     |      2hrs      |      hrs     |     hrs    |
+| Create backend routes, controllers    |    H     |      2hrs      |      1hrs     |     hrs    |
 | Create services folder and connect frontend and backend   |    H     |      3hrs      |      hrs     |     hrs    |
 | Create container folder and make API calls |    H     |      2hrs      |      hrs     |     hrs     |
 | Navbar - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      1.5hrs     |     hrs     |
 
 <br>
 
