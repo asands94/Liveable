@@ -31,7 +31,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 ### Goals
 
-- Users, posts, and locations tables with associations
+- Users, posts, locations, and categories tables with associations
 - Deployment with Surge and Heroku
 - Full CRUD for posts
 - Have a RESTful JSON API
