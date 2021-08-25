@@ -65,29 +65,97 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/XXd9LPB.png)
 
-- Desktop Landing
+- Desktop/tablet horizontal Landing
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/FqJh665.png)
 
-- Desktop Hero
+- Desktop/tablet horizontal Homepage Top (logged out)
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/tO1kCFh.png)
 
-- Resource Index
+- Desktop/tablet horizontal Sign Up
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/IYrySKh.png)
 
-- Resource Show
+- Desktop/tablet horizontal Login
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/aDa9hir.png)
 
-- Tablet Resource Index
+- Desktop/tablet horizontal Homepage Top (logged in)
 
-![Dummy Link](url)
+![Dummy Link](https://i.imgur.com/aLKClxV.png)
 
-- Mobile Resource Index
+- Desktop/tablet horizontal Homepage Bottom (logged out)
+
+![Dummy Link](https://i.imgur.com/JwruFTW.png)
+
+- Desktop/tablet horizontal Homepage Bottom (logged in)
+
+![Dummy Link](https://i.imgur.com/wSH6pSM.png)
+
+- Desktop/tablet horizontal All Posts Page
+
+![Dummy Link](https://i.imgur.com/NTNiZKv.png)
+
+- Desktop/tablet horizontal All Posts page with detail modal
+
+![Dummy Link](https://i.imgur.com/KiuaRsj.png)
+
+- Desktop/tablet horizontal User Profile Page
+
+![Dummy Link](https://i.imgur.com/YVI5mgP.png)
+
+- Desktop/tablet horizontal About Page
+
+
+
+
+
+![Dummy Link](https://i.imgur.com/LJiVZua.png)
+
+- Mobile/tablet vertical Landing
+
+![Dummy Link](https://i.imgur.com/OMYhpk4.png)
+
+- Mobile/tablet vertical Homepage Top (logged out)
+
+![Dummy Link](https://i.imgur.com/9Ro6VeV.png)
+
+- Mobile/tablet vertical Sign Up
+
+![Dummy Link](https://i.imgur.com/nbeMWcB.png)
+
+- Mobile/tablet vertical Login
+
+![Dummy Link]https://i.imgur.com/LscCoGs.png)
+
+- Mobile/tablet vertical Homepage Top (logged in)
+
+![Dummy Link](https://i.imgur.com/fDeITVG.png)
+
+- Mobile/tablet vertical Homepage Bottom (logged out)
+
+![Dummy Link](https://i.imgur.com/eNuGyt7.png)
+
+- Mobile/tablet vertical Homepage Bottom (logged in)
+
+![Dummy Link](https://i.imgur.com/XdKsboj.png)
+
+- Mobile/tablet vertical All Posts Page
+
+![Dummy Link](https://i.imgur.com/zEzxaSj.png)
+
+- Mobile/tablet vertical All Posts page with detail modal
+
+![Dummy Link](https://i.imgur.com/vBABNeN.png)
+
+- Mobile/tablet vertical User Profile Page
+
+![Dummy Link](https://i.imgur.com/ejy1Isr.png)
+
+- Mobile/tablet vertical About Page
 
 #### Component Tree
 
