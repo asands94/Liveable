@@ -220,7 +220,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create backend schema, models    |    H     |      1hrs      |      hrs     |     hrs    |
+| Create backend schema, models    |    H     |      1hrs      |      .5hrs     |     hrs    |
 | Create backend routes, controllers    |    H     |      2hrs      |      hrs     |     hrs    |
 | Create services folder and connect frontend and backend   |    H     |      3hrs      |      hrs     |     hrs    |
 | Create container folder and make API calls |    H     |      2hrs      |      hrs     |     hrs     |
