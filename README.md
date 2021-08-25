@@ -88,11 +88,11 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Desktop/tablet horizontal Homepage Bottom (logged in)
 
-<img src="https://i.imgur.com/wSH6pSM.png" width="300">
+<img src="https://i.imgur.com/y6lSWL4.png" width="300">
 
 - Desktop/tablet horizontal All Posts Page
 
-<img src="https://i.imgur.com/NTNiZKv.png" width="300">
+<img src="https://i.imgur.com/btPOnQK.png" width="300">
 
 - Desktop/tablet horizontal All Posts page with detail modal
 
