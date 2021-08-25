@@ -226,8 +226,8 @@ src
 | Create container folder and make API calls |    H     |      2hrs      |      hrs     |     hrs     |
 | Navbar - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
 | Navbar - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
-| Sign Up JS |    H     |      1hrs      |      hrs     |     hrs     |
-| Login JS |    H     |      1hrs      |      hrs     |     hrs     |
+| Sign Up JS |    H     |      1hrs      |      1.5hrs     |     hrs     |
+| Login JS |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Create posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
 | Show posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
 | Update posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      2.5hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      4.5hrs     |     hrs     |
 
 <br>
 
