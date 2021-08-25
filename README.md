@@ -148,7 +148,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Mobile/tablet vertical User Profile Page
 
-<img src="https://i.imgur.com/NGHKvKg.png" height="300">
+<img src="https://i.imgur.com/SD3vsYa.png" height="300">
 
 - Mobile/tablet vertical Edit Post Page
 
