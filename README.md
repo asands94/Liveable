@@ -106,6 +106,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - Desktop/tablet horizontal User Profile Page
 
+<img src="https://i.imgur.com/GpgHyh7.png" width="300">
+
+- Desktop/tablet horizontal Edit Post Page
+
 <img src="https://i.imgur.com/YVI5mgP.png" width="300">
 
 - Desktop/tablet horizontal About Page
@@ -149,6 +153,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 <img src="https://i.imgur.com/vBABNeN.png" width="300">
 
 - Mobile/tablet vertical User Profile Page
+
+<img src="https://i.imgur.com/NGHKvKg.png" width="300">
+
+- Mobile/tablet vertical Edit Post Page
 
 <img src="https://i.imgur.com/ejy1Isr.png" width="300">
 
