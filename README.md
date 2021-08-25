@@ -84,7 +84,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Desktop/tablet horizontal Homepage Bottom (logged out)
 
-<img src="https://i.imgur.com/JwruFTW.png" width="300">
+<img src="https://i.imgur.com/0abIFr8.png" width="300">
 
 - Desktop/tablet horizontal Homepage Bottom (logged in)
 
