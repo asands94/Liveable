@@ -166,7 +166,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+<img src="https://i.imgur.com/Mlvddgu.png" width="300">
 
 #### Component Architecture
 
@@ -179,6 +179,7 @@ src
 |__index.js
 |__ assets/
       |__ fonts
+      |__ images/
 |__ components/
       |__ Layout/
           |__ Layout.css
@@ -199,6 +200,9 @@ src
       |__ Home/
           |__ Home.css
           |__ Home.jsx
+      |__ Login/
+          |__ Login.css
+          |__ Login.jsx
       |__ Posts/
           |__ Posts.css
           |__ Posts.jsx
@@ -208,9 +212,6 @@ src
       |__ PostEdit/
           |__ PostEdit.css
           |__ PostEdit.jsx
-      |__ SignIn/
-          |__ SignIn.css
-          |__ SignIn.jsx
       |__ SignUp/
           |__ SignUp.css
           |__ SignUp.jsx
