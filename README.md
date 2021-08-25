@@ -220,35 +220,34 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create backend schema, models, controllers    |    H     |      hrs      |      hrs     |     hrs    |
-| Create services folder and connect frontend and backend   |    H     |      hrs      |      hrs     |     hrs    |
-| Create container folder and make API calls |    H     |      hrs      |      hrs     |     hrs     |
-| Navbar - signed in view |    H     |      hrs      |      hrs     |     hrs     |
-| Navbar - signed out view |    H     |      hrs      |      hrs     |     hrs     |
-| Sign Up JS |    H     |      hrs      |      hrs     |     hrs     |
-| Login JS |    H     |      hrs      |      hrs     |     hrs     |
-| Create posts functionality |    H     |      hrs      |      hrs     |     hrs     |
-| Show posts functionality |    H     |      hrs      |      hrs     |     hrs     |
-| Update posts functionality |    H     |      hrs      |      hrs     |     hrs     |
-| Delete posts functionality |    H     |      hrs      |      hrs     |     hrs     |
-| Create profile page |    H     |      hrs      |      hrs     |     hrs     |
-| Home page - signed in view |    H     |      hrs      |      hrs     |     hrs     |
-| Home page - signed out view |    H     |      hrs      |      hrs     |     hrs     |
-| Global CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Create posts CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Show posts CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Update posts CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Delete posts CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Profile page CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Sign Up CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Login CSS |    H     |      hrs      |      hrs     |     hrs     |
-| Phone media query  |    H     |      hrs      |      hrs     |     hrs     |
-| Tablet media query  |    H     |      hrs      |      hrs     |     hrs     |
-| Seed database and check backend routes |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV - Add share button |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV - users add image from computer |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV - generate random username on sign up |    H     |      hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      hrs      |      hrs     |     TBD     |
+| Create backend schema, models, controllers    |    H     |      3hrs      |      hrs     |     hrs    |
+| Create services folder and connect frontend and backend   |    H     |      3hrs      |      hrs     |     hrs    |
+| Create container folder and make API calls |    H     |      2hrs      |      hrs     |     hrs     |
+| Navbar - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
+| Navbar - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
+| Sign Up JS |    H     |      1hrs      |      hrs     |     hrs     |
+| Login JS |    H     |      1hrs      |      hrs     |     hrs     |
+| Create posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
+| Show posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
+| Update posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
+| Delete posts functionality |    H     |      0.5hrs      |      hrs     |     hrs     |
+| Create profile page (JS) |    H     |      1hrs      |      hrs     |     hrs     |
+| Home page - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
+| Home page - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
+| Global CSS |    H     |      4hrs      |      hrs     |     hrs     |
+| Create posts CSS |    H     |      1hrs      |      hrs     |     hrs     |
+| Show posts CSS |    H     |      3hrs      |      hrs     |     hrs     |
+| Update posts CSS |    H     |      1hrs      |      hrs     |     hrs     |
+| Profile page CSS |    H     |      2hrs      |      hrs     |     hrs     |
+| Sign Up CSS |    H     |      2hrs      |      hrs     |     hrs     |
+| Login CSS |    H     |      2hrs      |      hrs     |     hrs     |
+| Phone media query  |    H     |      3hrs      |      hrs     |     hrs     |
+| Tablet media query  |    H     |      3hrs      |      hrs     |     hrs     |
+| Seed database and check backend routes |    H     |      2hrs      |      hrs     |     hrs     |
+| PMPV - Add share button |    H     |      1hrs      |      hrs     |     hrs     |
+| PMPV - users add image from computer |    H     |      5hrs      |      hrs     |     hrs     |
+| PMPV - generate random username on sign up |    H     |      5hrs      |      hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      hrs     |     TBD     |
 
 <br>
 
