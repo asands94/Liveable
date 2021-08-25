@@ -100,7 +100,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Desktop/tablet horizontal User Profile Page
 
-<img src="https://i.imgur.com/GpgHyh7.png" width="300">
+<img src="https://i.imgur.com/SD3vsYa.png" width="300">
 
 - Desktop/tablet horizontal Edit Post Page
 
@@ -132,7 +132,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Mobile/tablet vertical Homepage Bottom (logged out)
 
-<img src="https://i.imgur.com/eNuGyt7.png" height="300">
+<img src="https://i.imgur.com/gPBnLmo.png" height="300">
 
 - Mobile/tablet vertical Homepage Bottom (logged in)
 
@@ -148,7 +148,7 @@ The **Liveable** MVP is to allow authorized users to create, read, update, and d
 
 - Mobile/tablet vertical User Profile Page
 
-<img src="https://i.imgur.com/SD3vsYa.png" height="300">
+<img src="https://i.imgur.com/Fi9oiqH.png" height="300">
 
 - Mobile/tablet vertical Edit Post Page
 
