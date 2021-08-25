@@ -19,26 +19,22 @@
 
 ## Overview
 
-_**Liveable** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+**Liveable** is a fullstack application where users can share their experiences renting homes in New Zealand. Authorized users can to create, update, and delete their posts. All users (authorized or not) can read posts that other users have written. The goal of this application is to bring awareness to the unfavorable living conditions of rental properties in hopes of promoting the idea that homes (like cars) should have a warrant of fitness. This would assure that tenants are living in quality homes at reasonable prices. This application is built with Ruby on Rails on the backend and React.js on the frontend.
 
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+The **Liveable** MVP is to allow authorized users to create, read, update, and delete their posts as well as see details of an individual post. Users will be able to use the applicatiion on desktop, mobile, or a tablet. Flexbox and grid will be used for styling. 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Users, posts, and locations tables with associations
+- Deployment with Surge and Heroku
+- Full CRUD for posts
+- Have a RESTful JSON API
 
 <br>
 
@@ -48,23 +44,21 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| Axios | _Lorem ipsum dolor sit amet, consectetur._ |
-|     bcrypt      | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Rails      | _Lorem ipsum dolor sit amet, consectetur._ |
-|           | _Lorem ipsum dolor sit amet, consectetur._ |
-|     rack-cors      | _Lorem ipsum dolor sit amet, consectetur._ |
-|     jwt      | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | Frontend framwork |
+|   React Router   | Frontend routing |
+| Axios | API interaction |
+|     bcrypt      | Password security |
+|     Rails      | Backend framwork |
+|     rack-cors      | Cross-origin resource sharing |
+|     jwt      | JSON webtoken for user authorization |
+|     Material-UI      | Styling |
+|     Faker      | Seed the database with fake information |
 
 <br>
 
 ### Client (Front End)
 
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 
 <img src="https://i.imgur.com/XXd9LPB.png" width="300">
 
@@ -164,13 +158,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
 <img src="https://i.imgur.com/Mlvddgu.png" width="500">
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -258,13 +248,7 @@ src
 | PMPV - Add share button |    H     |      hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    H     |      hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
-| PMPV -  |    H     |      hrs      |      hrs     |     hrs     |
 | TOTAL               |          |      hrs      |      hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -272,9 +256,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+<img src="https://i.imgur.com/qg4OKRF.png" width="500">
 <br>
 
 ***
@@ -287,8 +269,12 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+```
+{
+  'TBD': 'we shall see'
+ }
+```
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+TBD
