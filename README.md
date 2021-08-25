@@ -235,19 +235,19 @@ src
 | Home page - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
 | Home page - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
 | Global CSS |    H     |      4hrs      |      hrs     |     hrs     |
-| Create posts CSS |    H     |      1hrs      |      hrs     |     hrs     |
-| Show posts CSS |    H     |      3hrs      |      hrs     |     hrs     |
-| Update posts CSS |    H     |      1hrs      |      hrs     |     hrs     |
-| Profile page CSS |    H     |      2hrs      |      hrs     |     hrs     |
-| Sign Up CSS |    H     |      2hrs      |      hrs     |     hrs     |
-| Login CSS |    H     |      2hrs      |      hrs     |     hrs     |
+| Create posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
+| Show posts CSS |    M     |      3hrs      |      hrs     |     hrs     |
+| Update posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
+| Profile page CSS |    M     |      2hrs      |      hrs     |     hrs     |
+| Sign Up CSS |    M     |      2hrs      |      hrs     |     hrs     |
+| Login CSS |    M     |      2hrs      |      hrs     |     hrs     |
 | Phone media query  |    H     |      3hrs      |      hrs     |     hrs     |
 | Tablet media query  |    H     |      3hrs      |      hrs     |     hrs     |
 | Seed database and check backend routes |    H     |      2hrs      |      hrs     |     hrs     |
-| PMPV - Add share button |    H     |      1hrs      |      hrs     |     hrs     |
-| PMPV - users add image from computer |    H     |      5hrs      |      hrs     |     hrs     |
-| PMPV - generate random username on sign up |    H     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      hrs     |     TBD     |
+| PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
+| PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
+| PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      hrs     |     hrs     |
 
 <br>
 
@@ -262,7 +262,7 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+P-MVP goals are to add a share button to all posts, allow users to upload images from their computer using active storage, and to generate a random username for users upon sign up using the faker package. 
 
 ***
 
