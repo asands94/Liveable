@@ -114,51 +114,51 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - Desktop/tablet horizontal About Page
 
-<img src="https://i.imgur.com/LJiVZua.png" width="300">
+<img src="https://i.imgur.com/LJiVZua.png" height="300">
 
 - Mobile/tablet vertical Landing
 
-<img src="https://i.imgur.com/OMYhpk4.png" width="300">
+<img src="https://i.imgur.com/OMYhpk4.png" height="300">
 
 - Mobile/tablet vertical Homepage Top (logged out)
 
-<img src="https://i.imgur.com/9Ro6VeV.png" width="300">
+<img src="https://i.imgur.com/9Ro6VeV.png" height="300">
 
 - Mobile/tablet vertical Sign Up
 
-<img src="https://i.imgur.com/nbeMWcB.png" width="300">
+<img src="https://i.imgur.com/nbeMWcB.png" height="300">
 
 - Mobile/tablet vertical Login
 
-<img src="https://i.imgur.com/LscCoGs.png" width="300">
+<img src="https://i.imgur.com/LscCoGs.png" height="300">
 
 - Mobile/tablet vertical Homepage Top (logged in)
 
-<img src="https://i.imgur.com/fDeITVG.png" width="300">
+<img src="https://i.imgur.com/fDeITVG.png" height="300">
 
 - Mobile/tablet vertical Homepage Bottom (logged out)
 
-<img src="https://i.imgur.com/eNuGyt7.png" width="300">
+<img src="https://i.imgur.com/eNuGyt7.png" height="300">
 
 - Mobile/tablet vertical Homepage Bottom (logged in)
 
-<img src="https://i.imgur.com/XdKsboj.png" width="300">
+<img src="https://i.imgur.com/XdKsboj.png" height="300">
 
 - Mobile/tablet vertical All Posts Page
 
-<img src="https://i.imgur.com/zEzxaSj.png" width="300">
+<img src="https://i.imgur.com/zEzxaSj.png" height="300">
 
 - Mobile/tablet vertical All Posts page with detail modal
 
-<img src="https://i.imgur.com/vBABNeN.png" width="300">
+<img src="https://i.imgur.com/vBABNeN.png" height="300">
 
 - Mobile/tablet vertical User Profile Page
 
-<img src="https://i.imgur.com/NGHKvKg.png" width="300">
+<img src="https://i.imgur.com/NGHKvKg.png" height="300">
 
 - Mobile/tablet vertical Edit Post Page
 
-<img src="https://i.imgur.com/ejy1Isr.png" width="300">
+<img src="https://i.imgur.com/ejy1Isr.png" height="300">
 
 - Mobile/tablet vertical About Page
 
@@ -166,7 +166,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-<img src="https://i.imgur.com/Mlvddgu.png" width="300">
+<img src="https://i.imgur.com/Mlvddgu.png" width="500">
 
 #### Component Architecture
 
