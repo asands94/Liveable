@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useHistory } from 'react-router-dom';
 // import CategoriesAdd from './CategoriesAdd';
 
 export default function CreatePost(props) {
@@ -10,8 +9,6 @@ export default function CreatePost(props) {
     message: '',
     image: ''
   });
-
-  const history = useHistory()
 
   const { handleCreate } = props;
 
@@ -47,6 +44,7 @@ export default function CreatePost(props) {
       </select> */}
 
       {/* <CategoriesAdd categories={categories} /> */}
+
       {/* <input
         type='text'
         name='location_id'

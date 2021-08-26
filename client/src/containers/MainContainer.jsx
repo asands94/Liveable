@@ -13,6 +13,7 @@ import Home from '../screens/Home/Home';
 import Locations from '../screens/Posts/Locations';
 import Categories from '../screens/Posts/Categories';
 import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
+import Profile from '../screens/Profile/Profile';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -99,6 +100,14 @@ export default function MainContainer(props) {
           <Locations
             locations={locations}
           />
+        </Route>
+        <Route exact path='/profile/:username'>
+          <Profile
+            handleCreate={handleCreate}
+            handleUpdate={handleUpdate}
+            handleDelete={handleDelete}
+            posts={posts}
+            currentUser={currentUser} />
         </Route>
         <Route path='/'>
           <Home

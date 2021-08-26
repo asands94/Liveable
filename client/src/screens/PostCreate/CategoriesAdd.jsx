@@ -8,7 +8,6 @@ export default function CategoriesAdd(props) {
   const [selectedCategory, setSelectedCategory] = useState('');
   const { id } = useParams();
   const { categories } = props;
-  console.log(id)
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -23,18 +22,19 @@ export default function CategoriesAdd(props) {
     setSelectedCategory(value);
   };
 
-  // Our handle submit for adding the flavor to our Post
   const handleSubmit = async (e) => {
     e.preventDefault();
     const posts = await addCategoryToPost(id, selectedCategory);
     setPosts(posts);
   };
+
   return (
     <div>
       <h3>{posts?.title}</h3>
       {posts?.categories.map((category, index) => (
         <p key={index}>{category.name}</p>
       ))}
+
       <form onSubmit={handleSubmit}>
         <select onChange={handleChange} defaultValue='default'>
           <option disabled value='default'>

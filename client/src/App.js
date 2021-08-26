@@ -4,7 +4,6 @@ import { Route, Switch, useHistory } from 'react-router-dom'
 import './App.css';
 import MainContainer from './containers/MainContainer';
 import Layout from './layouts/Layout';
-import Profile from './screens/Profile/Profile';
 import {
   verifyUser,
   removeToken,
@@ -36,9 +35,6 @@ function App() {
         handleLogout={handleLogout}
       >
         <Switch>
-          <Route exact path='/profile/:username'>
-            <Profile currentUser={currentUser} />
-          </Route>
           <Route path='/'>
             <MainContainer currentUser={currentUser} />
           </Route>
