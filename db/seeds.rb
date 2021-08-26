@@ -27,6 +27,10 @@ puts "#{Location.count} locations created"
 10.times do
   Post.create!(location: @location, title: Faker::Movies::HarryPotter.book, message: Faker::Movies::HarryPotter.quote, user: @admin)
 end
+
+5.times do
+  Post.create!(location: @location, image: 'https://i.imgur.com/QlOUQN9.png' , title: Faker::Movies::HarryPotter.book, message: Faker::Movies::HarryPotter.quote, user: @admin)
+end
 puts "#{Post.count} posts created"
 
 Post.all.each do |post|
@@ -34,6 +38,7 @@ Post.all.each do |post|
     post.categories << Category.all.sample
   end
 end
+
 
 Location.all.each do |location|
   rand(1..10).times do

@@ -222,10 +222,10 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create backend schema, models    |    H     |      1hrs      |      .5hrs     |     hrs    |
 | Create backend routes, controllers    |    H     |      2hrs      |      2hrs     |     hrs    |
-| Create services folder and connect frontend and backend   |    H     |      3hrs      |      hrs     |     hrs    |
+| Create services folder and connect frontend and backend   |    H     |      3hrs      |      1.5hrs     |     hrs    |
 | Create container folder and make API calls |    H     |      2hrs      |      hrs     |     hrs     |
-| Navbar - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
-| Navbar - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
+| Navbar - signed in view |    H     |      1hrs      |      .5hrs     |     hrs     |
+| Navbar - signed out view |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Sign Up JS |    H     |      1hrs      |      1.5hrs     |     hrs     |
 | Login JS |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Create posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
@@ -233,8 +233,8 @@ src
 | Update posts functionality |    H     |      1hrs      |      hrs     |     hrs     |
 | Delete posts functionality |    H     |      0.5hrs      |      hrs     |     hrs     |
 | Create profile page (JS) |    H     |      1hrs      |      hrs     |     hrs     |
-| Home page - signed in view |    H     |      1hrs      |      hrs     |     hrs     |
-| Home page - signed out view |    H     |      1hrs      |      hrs     |     hrs     |
+| Home page - signed in view |    H     |      1hrs      |      .5hrs     |     hrs     |
+| Home page - signed out view |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Global CSS |    H     |      4hrs      |      hrs     |     hrs     |
 | Create posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
 | Show posts CSS |    M     |      3hrs      |      hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      4.5hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      8hrs     |     hrs     |
 
 <br>
 

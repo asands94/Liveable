@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
+    # object within a user hash(similar to an object)
     params.require(:user).permit(:email, :username, :password)
   end
 end
