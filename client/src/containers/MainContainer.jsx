@@ -9,6 +9,7 @@ import Posts from '../screens/Posts/Posts';
 import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import PostDetail from '../screens/PostDetail/PostDetail';
+import Home from '../screens/Home/Home';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -81,6 +82,13 @@ export default function MainContainer(props) {
           <Posts
             posts={posts}
             handleDelete={handleDelete}
+            currentUser={currentUser}
+          />
+        </Route>
+        <Route path='/'>
+          <Home
+            posts={posts}
+            handleCreate={handleCreate}
             currentUser={currentUser}
           />
         </Route>

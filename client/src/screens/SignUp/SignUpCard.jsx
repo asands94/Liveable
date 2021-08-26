@@ -76,7 +76,6 @@ export default function FormDialog(props) {
             Cancel
           </Button>
           <Button
-            // type="submit"
             onClick={(e) => {
               e.preventDefault();
               handleSignUp(formData);
@@ -87,49 +86,6 @@ export default function FormDialog(props) {
           </Button>
         </DialogActions>
       </Dialog>
-
-      {/* <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          handleSignUp(formData);
-        }}
-      >
-        <h3>Register</h3>
-        <label>
-          Username:
-          <input
-            type='text'
-            name='username'
-            value={formData.username}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input
-            type='text'
-            name='email'
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type='password'
-            name='password'
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <button>Submit</button>
-      </form> */}
-
     </div>
-
-
   );
 }

@@ -1,0 +1,10 @@
+.all-posts-container {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 30px 30px 30px;
+  column-gap: 120px;
+  row-gap: 190px;
+
+}
