@@ -10,6 +10,9 @@ import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import PostDetail from '../screens/PostDetail/PostDetail';
 import Home from '../screens/Home/Home';
+import Locations from '../screens/Posts/Locations';
+import Categories from '../screens/Posts/Categories';
+import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -45,7 +48,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const postData = await createPost(formData);
     setPosts((prevState) => [...prevState, postData]);
-    history.push('/posts');
+    history.push(`/posts/${posts.id}`);
   };
 
   const handleUpdate = async (id, formData) => {
@@ -70,10 +73,12 @@ export default function MainContainer(props) {
           <PostEdit posts={posts} handleUpdate={handleUpdate} />
         </Route>
         <Route path='/posts/new'>
-          <PostCreate handleCreate={handleCreate} />
+          <PostCreate
+            handleCreate={handleCreate}
+            categories={categories} />
         </Route>
         <Route path='/posts/:id'>
-          <PostDetail
+          <CategoriesAdd
             categories={categories}
             locations={locations}
           />
@@ -83,6 +88,16 @@ export default function MainContainer(props) {
             posts={posts}
             handleDelete={handleDelete}
             currentUser={currentUser}
+          />
+        </Route>
+        <Route path='/categories'>
+          <Categories
+            categories={categories}
+          />
+        </Route>
+        <Route path='/locations'>
+          <Locations
+            locations={locations}
           />
         </Route>
         <Route path='/'>

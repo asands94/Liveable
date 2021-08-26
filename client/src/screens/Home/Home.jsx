@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import HomeCard from "./HomeCard"
 import './Home.css'
-import CreatePost from './CreatePost';
+import CreatePost from '../PostCreate/PostCreate';
 
 export default function Home(props) {
   const { posts, handleCreate, currentUser } = props;
@@ -10,11 +10,11 @@ export default function Home(props) {
       <div className='posts-container'>
         {posts.reverse().map((post, index) => {
           return (
-            <>
-              {index < 5 ? (<div key={index}>
+            <div key={index}>
+              {index < 5 ? (
                 <HomeCard post={post} />
-              </div>) : null}
-            </>
+              ) : null}
+            </div>
           )
         })}
       </div>

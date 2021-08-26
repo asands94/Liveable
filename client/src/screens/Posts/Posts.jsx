@@ -9,11 +9,9 @@ export default function Posts(props) {
       <div className='all-posts-container'>
         {posts.reverse().map((post, index) => {
           return (
-            <>
-              <div key={index}>
-                <PostsCard post={post} />
-              </div>
-            </>
+            <div key={index}>
+              <PostsCard post={post} />
+            </div>
           )
         })}
       </div>

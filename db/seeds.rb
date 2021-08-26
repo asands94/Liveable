@@ -14,14 +14,15 @@ User.destroy_all
 @admin = User.create!(username: 'penguins', email: 'penguins@email.com', password: '123456')
 puts "#{User.count} users created"
 
-10.times do
-  Category.create!(name: Faker::Movies::HarryPotter.house)
-end
+@category = Category.create!(name: 'Housing Security')
+@category2 = Category.create!(name: 'House Maintainence')
+@category3 = Category.create!(name: 'Prices')
 puts "#{Category.count} categories created"
 
- 10.times do
-  @location = Location.create!(name: Faker::Movies::HarryPotter.location)
-end
+@location = Location.create!(name: 'Auckland')
+@location2 = Location.create!(name: 'Wellington')
+@location3 = Location.create!(name: 'Christchurch')
+@location4 = Location.create!(name: 'Dunedin')
 puts "#{Location.count} locations created"
 
 10.times do
@@ -29,12 +30,12 @@ puts "#{Location.count} locations created"
 end
 
 5.times do
-  Post.create!(location: @location, image: 'https://i.imgur.com/QlOUQN9.png' , title: Faker::Movies::HarryPotter.book, message: Faker::Movies::HarryPotter.quote, user: @admin)
+  Post.create!(location: @location2, image: 'https://i.imgur.com/QlOUQN9.png' , title: Faker::Movies::HarryPotter.book, message: Faker::Movies::HarryPotter.quote, user: @admin)
 end
 puts "#{Post.count} posts created"
 
 Post.all.each do |post|
-  rand(1..10).times do
+  rand(1..3).times do
     post.categories << Category.all.sample
   end
 end

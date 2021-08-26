@@ -1,5 +1,5 @@
 class LocationsController < ApplicationController
-  before_action :set_location, only: [:show, :update, :destroy]
+  before_action :set_location, only: :add_to_post
   # GET /posts
   def index
     @locations = Location.all
@@ -14,7 +14,7 @@ class LocationsController < ApplicationController
 
   def add_to_post
     @post = Post.find(params[:post_id])
-    @post.locations << location
+    @post.locations << @location
     render json: @post, include: :location
   end
 
