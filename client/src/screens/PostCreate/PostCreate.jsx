@@ -1,16 +1,17 @@
 import { useState } from 'react'
+import Locations from '../Posts/Locations';
 // import CategoriesAdd from './CategoriesAdd';
 
-export default function CreatePost(props) {
+export default function PostCreate(props) {
   const [formData, setFormData] = useState({
-    // location_id: '',
+    location_id: '',
     // category: '',
     title: '',
     message: '',
     image: ''
   });
 
-  const { handleCreate } = props;
+  const { handleCreate, locations } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +21,7 @@ export default function CreatePost(props) {
     }));
   };
 
-  // console.log(formData.category)
+  console.log(formData)
 
   return (
     <form
@@ -53,20 +54,53 @@ export default function CreatePost(props) {
         onChange={handleChange}
       /> */}
 
+
+      {/* <Locations
+        formData={formData}
+        handleChange={handleChange}
+        locations={locations}
+      /> */}
+
+      <select name='location_id' onChange={handleChange} defaultValue='default'>
+        <option disabled value='default'>
+          -- Select a Location --
+        </option>
+        {locations?.map((location) => (
+          <>
+            <option
+              type='text'
+              key={location.id}
+
+              value={location.id}
+            > {location.name}
+            </option>
+            {/* {console.log(location.id)} */}
+          </>
+        ))}
+      </select>
+      <br />
+
+
+
       <input
         type='text'
         name='title'
-        placeholder="TITLE"
+        placeholder='TITLE'
         value={formData.title}
         onChange={handleChange}
       />
-      <input
-        type='text'
+      {/* REMOVE BR TAG */}
+      < br />
+      <textarea
+        maxLength='250'
+        rows="7"
+        cols="40"
         name='message'
         placeholder='SHARE YOUR STORY'
         value={formData.message}
-        onChange={handleChange}
-      />
+        onChange={handleChange} />
+      {/* REMOVE BR TAG */}
+      < br />
       <input
         type='text'
         name='image'
@@ -74,6 +108,8 @@ export default function CreatePost(props) {
         value={formData.image}
         onChange={handleChange}
       />
+      {/* REMOVE BR TAG */}
+      < br />
       <button>Submit</button>
     </form>
   );

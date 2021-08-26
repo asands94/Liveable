@@ -49,7 +49,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const postData = await createPost(formData);
     setPosts((prevState) => [...prevState, postData]);
-    history.push(`/posts/${posts.id}`);
+    history.push(`/posts`);
   };
 
   const handleUpdate = async (id, formData) => {
@@ -75,6 +75,7 @@ export default function MainContainer(props) {
         </Route>
         <Route path='/posts/new'>
           <PostCreate
+            locations={locations}
             handleCreate={handleCreate}
             categories={categories} />
         </Route>
@@ -94,11 +95,6 @@ export default function MainContainer(props) {
         <Route path='/categories'>
           <Categories
             categories={categories}
-          />
-        </Route>
-        <Route path='/locations'>
-          <Locations
-            locations={locations}
           />
         </Route>
         <Route exact path='/profile/:username'>

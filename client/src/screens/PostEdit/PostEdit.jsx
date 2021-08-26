@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import './PostEdit.css'
 
 export default function PostEdit(props) {
   const [formData, setFormData] = useState({
@@ -52,18 +53,25 @@ export default function PostEdit(props) {
         value={formData.title}
         onChange={handleChange}
       />
-      <input
-        type='text'
+      {/* REMOVE BR TAG */}
+      < br />
+      <textarea
+        maxLength='250'
+        rows="7"
+        cols="40"
         name='message'
         value={formData.message}
-        onChange={handleChange}
-      />
+        onChange={handleChange} />
+      {/* REMOVE BR TAG */}
+      < br />
       <input
         type='text'
         name='image'
         value={formData.image}
         onChange={handleChange}
       />
+      {/* REMOVE BR TAG */}
+      < br />
       <button>Submit</button>
     </form>
   )

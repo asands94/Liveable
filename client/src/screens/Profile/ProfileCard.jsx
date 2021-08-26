@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 });
 
 export default function ImgMediaCard(props) {
-  const { post, handleUpdate, handleDelete } = props;
+  const { post, handleDelete } = props;
 
   const classes = useStyles();
 
