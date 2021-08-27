@@ -8,24 +8,29 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   image: {
-    width: 280,
-    height: 140,
+    // width: '16vw',
+    height: '18vh',
     margin: 20,
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'center',
+    // alignItems: 'center',
   },
   text: {
-    width: 140,
-    height: 140,
+    width: '8vw',
+    height: '18vh',
     margin: 20,
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'center',
   },
   media: {
-    width: 140,
-    height: 140,
+    width: '8vw',
+    height: '18vh',
+    display: 'flex',
+    // alignItems: 'center',
   },
 });
 
-export default function ImgMediaCard(props) {
+export default function HomePostCard(props) {
   const { post } = props;
 
   const classes = useStyles();
@@ -43,11 +48,11 @@ export default function ImgMediaCard(props) {
               title={post.title}
             />
           </CardActionArea>
-          <CardContent>
+          {/* <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
               {(post.message).length > 50 ? (post.message).substring(0, 50) + "..." : post.message}
             </Typography>
-          </CardContent>
+          </CardContent> */}
         </Card>
         ) : (<Card className={classes.text}>
           <CardContent>

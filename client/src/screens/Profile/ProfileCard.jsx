@@ -9,14 +9,16 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    width: 200,
-    height: 200,
+    width: '10.7vw',
+    height: '24.9vh',
     margin: 20,
     display: 'flex',
+    justifyContent: 'center',
+    border: 'solid orange'
   },
   media: {
-    width: 200,
-    height: 200,
+    width: '10.7vw',
+    height: '24.9vh',
   },
 });
 

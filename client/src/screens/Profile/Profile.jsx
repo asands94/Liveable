@@ -10,17 +10,20 @@ export default function Profile(props) {
     return <Redirect to='/' />
   }
   return (
-    <div className='profile-posts-container'>
-      {posts.map((post, index) => (
-        <div key={index} className='blah'>
-          {post.user_id === currentUser.id &&
-            <ProfileCard
-              handleDelete={handleDelete}
-              handleUpdate={handleUpdate}
-              post={post} />}
-        </div>
-      ))}
+    <>
+      <div className='profile-posts-container'>
+        {posts.map((post, index) => (
+          <div key={index} className='blah'>
+            {post.user_id === currentUser.id &&
+              <ProfileCard
+                handleDelete={handleDelete}
+                handleUpdate={handleUpdate}
+                post={post} />}
+          </div>
+        ))}
+
+      </div>
       <Link to='/posts/new'><button>NEW POST</button></Link>
-    </div>
+    </>
   )
 }

@@ -1,4 +1,6 @@
-.posts-container {
+.posts-info-container {
   display: flex;
   justify-content: center;
+  border: solid pink;
+  width: 70vw
 }

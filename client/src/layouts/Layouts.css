@@ -1,0 +1,12 @@
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  border: solid green;
+  width: 70vw
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  border: solid blue;
+}

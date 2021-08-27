@@ -1,17 +1,21 @@
 .profile-posts-container {
-  display: grid;
+  display: flex;
   justify-items: center;
   justify-content: center;
-  grid-template-columns: 100px 100px 100px 100px 100px;
-  grid-template-rows: 30px 30px 30px;
-  column-gap: 120px;
-  row-gap: 190px;
-
+  /* grid-template-columns: 100px 100px 100px 100px 100px; */
+  /* grid-template-rows: 30px 30px 30px; */
+  /* column-gap: 120px; */
+  /* row-gap: 190px; */
+  border: solid yellow;
+  width: 70vw
 }
 
 .blah {
+  display: flex;
+  justify-content: center;
   position: relative;
-  height: 240px
+  border: solid purple;
+  width: 100vw
 }
 
 .blah:hover .delete,
