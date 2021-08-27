@@ -10,3 +10,18 @@
   align-items: center;
   border: solid blue;
 }
+
+.nav-button {
+  border: none;
+  background: none;
+  color: var(--main-brand-color)
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.website-name a {
+  text-decoration: none;
+  color: var(--main-brand-color)
+}

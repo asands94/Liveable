@@ -228,14 +228,14 @@ src
 | Navbar - signed out view |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Sign Up JS |    H     |      1hrs      |      1.5hrs     |     hrs     |
 | Login JS |    H     |      1hrs      |      .5hrs     |     hrs     |
-| Create posts functionality |    H     |      1hrs      |      6hrs     |     hrs     |
+| Create posts functionality |    H     |      1hrs      |      7hrs     |     hrs     |
 | Show posts functionality |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Update posts functionality |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Delete posts functionality |    H     |      0.5hrs      |      .5hrs     |     hrs     |
 | Create profile page (JS) |    H     |      1hrs      |      hrs     |     hrs     |
 | Home page - signed in view |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Home page - signed out view |    H     |      1hrs      |      .5hrs     |     hrs     |
-| Global CSS |    H     |      4hrs      |      1hrs     |     hrs     |
+| Global CSS |    H     |      4hrs      |      2.5hrs     |     hrs     |
 | Create posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
 | Show posts CSS |    M     |      3hrs      |      hrs     |     hrs     |
 | Update posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      14.5hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      17hrs     |     hrs     |
 
 <br>
 

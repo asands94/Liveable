@@ -14,25 +14,25 @@ export default function Layout(props) {
         <div className='nav-links'>
           {currentUser && (
             <div>
-              <Link to='/posts'><button>ALL POSTS</button></Link>
+              <Link to='/posts'><button className='nav-button'>ALL POSTS</button></Link>
             </div>
           )}
           {currentUser ? (
             <div>
-              <Link to={`/profile/${currentUser.username}`}><button>{currentUser.username}</button></Link>
-              <button onClick={handleLogout}>LOGOUT</button>
+              <Link to={`/profile/${currentUser.username}`}><button className='nav-button'>{(currentUser.username).toUpperCase()}</button></Link>
+              <button className='nav-button' onClick={handleLogout}>LOGOUT</button>
             </div>
           ) : (
             <>
-              <Link to='/posts'>ALL POSTS</Link>
+              <Link to='/posts'><button className='nav-button'>ALL POSTS</button></Link>
               <Login setCurrentUser={setCurrentUser} />
               <SignUp setCurrentUser={setCurrentUser} />
-              <Link to='/about'>ABOUT</Link>
+              <Link to='/about'><button className='nav-button'>ABOUT</button></Link>
             </>
           )}
           {currentUser && (
             <div>
-              <Link to='/about'><button>ABOUT</button></Link>
+              <Link to='/about'><button className='nav-button'>ABOUT</button></Link>
             </div>
           )}
         </div>

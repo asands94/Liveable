@@ -19,14 +19,6 @@ export default function PostCreate(props) {
     }));
   };
 
-  // const isDisabled = () => {
-  //   if (currentUser === null) {
-  //     return true
-  //   } else {
-  //     return false
-  //   }
-  // }
-
   const isDisabled = currentUser === null ? true : false
 
   return (

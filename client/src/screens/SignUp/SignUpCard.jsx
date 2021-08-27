@@ -34,9 +34,9 @@ export default function FormDialog(props) {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+      <button className='nav-button' variant="outlined" color="primary" onClick={handleClickOpen}>
         SIGN UP
-      </Button>
+      </button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Sign Up</DialogTitle>
         <DialogContent>
