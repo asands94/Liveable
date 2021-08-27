@@ -8,10 +8,10 @@ import { getAllLocations } from '../services/locations';
 import Posts from '../screens/Posts/Posts';
 import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
-import PostDetail from '../screens/PostDetail/PostDetail';
+// import PostDetail from '../screens/PostDetail/PostDetail';
 import Home from '../screens/Home/Home';
-import Locations from '../screens/Posts/Locations';
-import Categories from '../screens/Posts/Categories';
+// import Locations from '../screens/Posts/Locations';
+// import Categories from '../screens/Posts/Categories';
 import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 import Profile from '../screens/Profile/Profile';
 
@@ -92,11 +92,6 @@ export default function MainContainer(props) {
             currentUser={currentUser}
           />
         </Route>
-        <Route path='/categories'>
-          <Categories
-            categories={categories}
-          />
-        </Route>
         <Route exact path='/profile/:username'>
           <Profile
             handleCreate={handleCreate}
@@ -107,6 +102,7 @@ export default function MainContainer(props) {
         </Route>
         <Route path='/'>
           <Home
+            locations={locations}
             posts={posts}
             handleCreate={handleCreate}
             currentUser={currentUser}

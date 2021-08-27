@@ -1,19 +1,24 @@
 import React from 'react'
 
 export default function Locations(props) {
-  const { locations, handleChange, formData } = props;
+  const { locations, handleChange } = props;
 
   return (
     <div>
-      <select onChange={handleChange}>
+      <select name='location_id' onChange={handleChange} defaultValue='default'>
+        <option disabled value='default'>
+          -- Select a Location --
+        </option>
         {locations?.map((location) => (
           <option
-            name='location_id'
-            value={formData.location_id}
+            key={location.id}
+            type='text'
+            value={location.id}
           > {location.name}
           </option>
         ))}
       </select>
+      <br />
     </div>
   )
 }

@@ -1,13 +1,13 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: :add_to_post
-  # GET /posts
+  # GET /categories
   def index
     @categories = Category.all
 
     render json: @categories, include: :posts
   end
 
-  # GET /posts/1
+  # GET /categories/1
   def show
     render json: @category, include: :posts
   end

@@ -34,9 +34,13 @@ export default function CategoriesAdd(props) {
       {posts?.categories.map((category, index) => (
         <p key={index}>{category.name}</p>
       ))}
-
       <form onSubmit={handleSubmit}>
-        <select onChange={handleChange} defaultValue='default'>
+        <select
+          name='categories'
+          onChange={handleChange}
+          defaultValue='default'
+
+        >
           <option disabled value='default'>
             -- Select a Category --
           </option>

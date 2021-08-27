@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import Locations from '../Posts/Locations';
-// import CategoriesAdd from './CategoriesAdd';
 
 export default function PostCreate(props) {
   const [formData, setFormData] = useState({
     location_id: '',
-    // category: '',
     title: '',
     message: '',
     image: ''
@@ -31,57 +29,7 @@ export default function PostCreate(props) {
       }}
     >
       <h3>Share Your Experience</h3>
-      {/* <select name='location_id' value={formData.value} onChange={handleChange}>
-        <option value='Auckland'>Auckland</option>
-        <option value='Wellington'>Wellington</option>
-        <option value='Christchurch'>Christchurch</option>
-        <option value='Dunedin'>Dunedin</option>
-      </select> */}
-      {/* 
-      <select name='category' multiple={true} value={formData.value} onChange={handleChange}>
-        <option value='housing-security'>Housing Security</option>
-        <option value='housing-maintainence'>House Maintainence</option>
-        <option value='prices'>Prices</option>
-      </select> */}
-
-      {/* <CategoriesAdd categories={categories} /> */}
-
-      {/* <input
-        type='text'
-        name='location_id'
-        placeholder="LOCATION"
-        value={formData.location_id}
-        onChange={handleChange}
-      /> */}
-
-
-      {/* <Locations
-        formData={formData}
-        handleChange={handleChange}
-        locations={locations}
-      /> */}
-
-      <select name='location_id' onChange={handleChange} defaultValue='default'>
-        <option disabled value='default'>
-          -- Select a Location --
-        </option>
-        {locations?.map((location) => (
-          <>
-            <option
-              type='text'
-              key={location.id}
-
-              value={location.id}
-            > {location.name}
-            </option>
-            {/* {console.log(location.id)} */}
-          </>
-        ))}
-      </select>
-      <br />
-
-
-
+      <Locations handleChange={handleChange} locations={locations} />
       <input
         type='text'
         name='title'
