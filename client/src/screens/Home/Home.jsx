@@ -24,6 +24,7 @@ export default function Home(props) {
         <HomeInfoCard />
       </div>
       <PostCreate
+        currentUser={currentUser}
         locations={locations}
         handleCreate={handleCreate}
       />

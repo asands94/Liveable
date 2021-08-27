@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom'
 import PostsCard from './PostsCard'
 import './Posts.css'
 
 export default function Posts(props) {
-  const { posts, handleDelete, currentUser } = props;
+  const { posts } = props;
   return (
     <>
       <div className='all-posts-container'>

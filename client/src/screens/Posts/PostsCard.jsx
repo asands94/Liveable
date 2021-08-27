@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     width: '10.7vw',
-    height: '24.9vh',
+    height: 'calc(10.7vw * (1))',
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
   media: {
     width: '10.7vw',
-    height: '24.9vh',
+    height: 'calc(10.7vw * (1))',
   },
 });
 

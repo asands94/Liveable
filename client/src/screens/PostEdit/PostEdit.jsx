@@ -36,6 +36,7 @@ export default function PostEdit(props) {
     }));
   };
 
+  if (!posts.length) return "Loading..."
 
 
   return (

@@ -1,15 +1,13 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    width: 280,
-    height: 140,
+    width: '16vw',
+    height: 'calc(16vw * (1/2))',
     margin: 20,
     display: 'flex',
     justifyContent: 'center',

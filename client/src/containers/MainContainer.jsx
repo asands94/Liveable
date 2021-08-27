@@ -8,12 +8,11 @@ import { getAllLocations } from '../services/locations';
 import Posts from '../screens/Posts/Posts';
 import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
-// import PostDetail from '../screens/PostDetail/PostDetail';
 import Home from '../screens/Home/Home';
-// import Locations from '../screens/Posts/Locations';
-// import Categories from '../screens/Posts/Categories';
 import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 import Profile from '../screens/Profile/Profile';
+import NotFound from '../screens/NotFound/NotFound';
+import About from '../screens/About/About';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -70,22 +69,23 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
-        <Route path='/posts/:id/edit'>
+        <Route exact path='/posts/:id/edit'>
           <PostEdit posts={posts} handleUpdate={handleUpdate} />
         </Route>
-        <Route path='/posts/new'>
+        <Route exact path='/posts/new'>
           <PostCreate
             locations={locations}
             handleCreate={handleCreate}
             categories={categories} />
         </Route>
-        <Route path='/posts/:id'>
+
+        <Route exact path='/posts/:id'>
           <CategoriesAdd
             categories={categories}
             locations={locations}
           />
         </Route>
-        <Route path='/posts'>
+        <Route exact path='/posts'>
           <Posts
             posts={posts}
             handleDelete={handleDelete}
@@ -100,7 +100,11 @@ export default function MainContainer(props) {
             posts={posts}
             currentUser={currentUser} />
         </Route>
-        <Route path='/'>
+        <Route exact path='/about'>
+          <About
+          />
+        </Route>
+        <Route exact path='/'>
           <Home
             locations={locations}
             posts={posts}
@@ -108,6 +112,7 @@ export default function MainContainer(props) {
             currentUser={currentUser}
           />
         </Route>
+        <Route component={NotFound} />
       </Switch>
     </div>
   )
