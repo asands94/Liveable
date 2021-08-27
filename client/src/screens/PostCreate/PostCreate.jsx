@@ -19,14 +19,15 @@ export default function PostCreate(props) {
     }));
   };
 
-  const isDisabled = () => {
-    if (currentUser === null) {
-      return true
-    } else {
-      return false
-    }
-  }
+  // const isDisabled = () => {
+  //   if (currentUser === null) {
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // }
 
+  const isDisabled = currentUser === null ? true : false
 
   return (
     <form
@@ -35,7 +36,7 @@ export default function PostCreate(props) {
         handleCreate(formData);
       }}
     >
-      <fieldset disabled={isDisabled()}>
+      <fieldset disabled={isDisabled}>
         <h3>Share Your Experience</h3>
         <Locations handleChange={handleChange} locations={locations} />
         <input
