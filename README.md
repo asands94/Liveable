@@ -235,7 +235,7 @@ src
 | Create profile page (JS) |    H     |      1hrs      |      hrs     |     hrs     |
 | Home page - signed in view |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Home page - signed out view |    H     |      1hrs      |      .5hrs     |     hrs     |
-| Global CSS |    H     |      4hrs      |      hrs     |     hrs     |
+| Global CSS |    H     |      4hrs      |      1hrs     |     hrs     |
 | Create posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
 | Show posts CSS |    M     |      3hrs      |      hrs     |     hrs     |
 | Update posts CSS |    M     |      1hrs      |      hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      13.5hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      14.5hrs     |     hrs     |
 
 <br>
 
