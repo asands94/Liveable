@@ -6,15 +6,19 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import edit from '../../assets/edit.svg'
+import deleteIcon from '../../assets/delete.svg'
 
 const useStyles = makeStyles({
   root: {
     width: '10.7vw',
     height: 'calc(10.7vw * (1))',
     margin: 20,
-    display: 'flex',
-    justifyContent: 'center',
-    border: 'solid orange'
+    color: '#29541e',
+    background: 'white', '&:hover': {
+      background: '#29541e62',
+      color: '#29541e18',
+    },
   },
   media: {
     width: '10.7vw',
@@ -41,14 +45,17 @@ export default function ImgMediaCard(props) {
             />
           </CardActionArea>
         </>
-      ) :
-        (<CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
+      ) : (
+        <CardContent>
+          <Typography variant="body2" component="p">
             {(post.message).length > 100 ? (post.message).substring(0, 100) + "..." : post.message}
           </Typography>
-        </CardContent>)}
-      <button className='delete' onClick={() => handleDelete(post.id)}>delete</button>
-      <Link to={`/posts/${post.id}/edit`}><button className='edit'>edit</button></Link>
+        </CardContent>
+      )}
+      <div className='profile-icons'>
+        <button className='delete' onClick={() => handleDelete(post.id)}><img src={deleteIcon} alt='delete icon' /></button>
+        <Link to={`/posts/${post.id}/edit`}><button className='edit'><img src={edit} alt='edit icon' /></button></Link>
+      </div>
     </Card>
   );
 }

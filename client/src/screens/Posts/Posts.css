@@ -1,18 +1,19 @@
 .all-posts-container {
-  display: flex;
+  display: grid;
   justify-items: center;
   justify-content: center;
-  /* grid-template-columns: 100px 100px 100px 100px 100px; */
-  /* grid-template-rows: 30px 30px 30px; */
-  /* column-gap: 120px; */
-  /* row-gap: 190px; */
-  border: solid yellow;
-  width: 70vw
+  grid-template-columns: repeat(5, 5.5vmax);
+  grid-auto-rows: 2vmax;
+  column-gap: 120px;
+  row-gap: 190px;
+  width: 70vw;
 }
 
-.purple {
-  border: solid purple;
+
+.post-cards {
+  /* border: solid purple; */
   display: flex;
   justify-content: center;
-  width: 100vw
+  width: 100vw;
+  margin-top: 150px
 }

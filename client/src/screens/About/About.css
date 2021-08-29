@@ -1,0 +1,21 @@
+.about-info-container {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+}
+
+.about-title {
+  margin-top: 150px;
+  color: var(--dark-accent-color)
+}
+
+img.expand-icon {
+  filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
+  margin-top: 50px;
+  width: 75px
+}
+
+.about-main-text {
+  color: var(--main-brand-color);
+  text-align: left;
+}

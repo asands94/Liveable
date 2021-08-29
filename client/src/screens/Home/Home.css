@@ -1,6 +1,43 @@
 .posts-info-container {
   display: flex;
   justify-content: center;
-  border: solid pink;
-  width: 70vw
+  width: 70vw;
+  overflow: scroll;
+  /* seems to do nothing atm*/
+  margin: auto;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.posts-info-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-text {
+  color: var(--light-accent-color);
+}
+
+.home-text-light {
+  color: var(--dark-accent-color);
+}
+
+.home-post-cards {
+  margin-top: 150px;
+}
+
+img.expand-icon {
+  filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
+  margin-top: 50px;
+  width: 75px
+}
+
+
+.home-footer {
+  width: 100vw;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  /* margin: 0 auto */
 }

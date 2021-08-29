@@ -13,6 +13,7 @@ import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 import Profile from '../screens/Profile/Profile';
 import NotFound from '../screens/NotFound/NotFound';
 import About from '../screens/About/About';
+import Footer from '../layouts/Footer';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -68,23 +69,27 @@ export default function MainContainer(props) {
 
   return (
     <div>
-      <Switch>
-        <Route exact path='/posts/:id/edit'>
-          <PostEdit posts={posts} handleUpdate={handleUpdate} />
-        </Route>
-        <Route exact path='/posts/new'>
-          <PostCreate
-            locations={locations}
-            handleCreate={handleCreate}
-            categories={categories} />
-        </Route>
 
-        <Route exact path='/posts/:id'>
-          <CategoriesAdd
-            categories={categories}
-            locations={locations}
-          />
-        </Route>
+      {currentUser &&
+        <Switch>
+          <Route exact path='/posts/:id/edit'>
+            <PostEdit posts={posts} handleUpdate={handleUpdate} />
+          </Route>
+          <Route exact path='/posts/new'>
+            <PostCreate
+              locations={locations}
+              handleCreate={handleCreate}
+              categories={categories} />
+          </Route>
+          <Route exact path='/posts/:id'>
+            <CategoriesAdd
+              categories={categories}
+              locations={locations}
+            />
+          </Route>
+        </Switch>
+      }
+      <Switch>
         <Route exact path='/posts'>
           <Posts
             posts={posts}
@@ -102,7 +107,10 @@ export default function MainContainer(props) {
         </Route>
         <Route exact path='/about'>
           <About
-          />
+            locations={locations}
+            posts={posts}
+            handleCreate={handleCreate}
+            currentUser={currentUser} />
         </Route>
         <Route exact path='/'>
           <Home

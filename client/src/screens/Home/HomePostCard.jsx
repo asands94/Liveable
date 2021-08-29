@@ -6,25 +6,29 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
-  image: {
-    width: '16vw',
-    height: 'calc(16vw * (1/2))',
+  all: {
+    width: '24vw',
+    height: 'calc(24vw * (1/2))',
     margin: 20,
     display: 'flex',
+    color: '#29541e',
   },
-  text: {
-    width: '8vw',
-    height: 'calc(16vw * (1/2))',
+  textOnly: {
+    width: '12vw',
+    height: 'calc(24vw * (1/2))',
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
+    color: '#29541e',
   },
   media: {
-    width: '8vw',
-    height: 'calc(16vw * (1/2))',
+    width: '12vw',
+    height: 'calc(24vw * (1/2))',
     display: 'flex',
-    justifySelf: 'left'
+    justifySelf: 'left',
+    color: '#29541e',
   },
+
 });
 
 export default function HomePostCard(props) {
@@ -35,8 +39,7 @@ export default function HomePostCard(props) {
   return (
     <>
       {post.image ?
-        (<Card className={classes.image}>
-          {/* <CardActionArea> */}
+        (<Card className={classes.all}>
           <CardMedia
             className={classes.media}
             component="img"
@@ -44,16 +47,15 @@ export default function HomePostCard(props) {
             image={post.image}
             title={post.title}
           />
-          {/* </CardActionArea> */}
           <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body2" component="p">
               {(post.message).length > 50 ? (post.message).substring(0, 50) + "..." : post.message}
             </Typography>
           </CardContent>
         </Card>
-        ) : (<Card className={classes.text}>
+        ) : (<Card className={classes.textOnly}>
           <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body2" component="p">
               {(post.message).length > 50 ? (post.message).substring(0, 50) + "..." : post.message}
             </Typography>
           </CardContent>

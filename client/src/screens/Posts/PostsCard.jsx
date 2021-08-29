@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
-    border: 'solid orange'
+    color: '#29541e',
   },
   media: {
     width: '10.7vw',
@@ -42,7 +42,7 @@ export default function ImgMediaCard(props) {
         </>
       ) :
         (<CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" component="p">
             {(post.message).length > 100 ? (post.message).substring(0, 100) + "..." : post.message}
           </Typography>
         </CardContent>)}

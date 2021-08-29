@@ -1,44 +1,57 @@
+.profile-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
 .profile-posts-container {
   display: flex;
-  justify-items: center;
   justify-content: center;
-  /* grid-template-columns: 100px 100px 100px 100px 100px; */
-  /* grid-template-rows: 30px 30px 30px; */
-  /* column-gap: 120px; */
-  /* row-gap: 190px; */
-  border: solid yellow;
-  width: 70vw
+  margin-top: 150px
 }
 
-.blah {
-  display: flex;
-  justify-content: center;
+.profile-cards {
   position: relative;
-  border: solid purple;
-  width: 100vw
 }
 
-.blah:hover .delete,
-.blah:hover .edit {
+.profile-cards:hover .delete,
+.profile-cards:hover .edit {
   display: flex;
-  justify-content: center;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.blah:hover .edit {
+
+.profile-cards:hover .edit {
   display: flex;
+  justify-content: center;
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* color: #29541e18 */
 }
 
 
 .delete,
 .edit {
+  border: none;
+  background: none;
   display: none;
   width: 50px;
+  height: 50px;
+  filter: invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%);
+}
+
+.delete:hover,
+.edit:hover {
+  cursor: pointer;
+}
+
+/* not working */
+.profile-icons {
+  display: flex;
+  flex-direction: column;
 }

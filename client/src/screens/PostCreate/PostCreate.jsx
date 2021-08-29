@@ -29,7 +29,7 @@ export default function PostCreate(props) {
       }}
     >
       <fieldset disabled={isDisabled}>
-        <h3>Share Your Experience</h3>
+        <h3 className='form-title'>Share Your Experience</h3>
         <Locations handleChange={handleChange} locations={locations} />
         <input
           type='text'
