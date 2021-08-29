@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 :root {
-  --main-bg-color: #E6E5D2;
   --main-brand-color: #29541E;
   --dark-accent-color: #9F805B;
   --light-accent-color: #E6E5D2;
@@ -14,7 +13,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--main-bg-color);
+  background-color: var(--light-accent-color);
   display: flex;
   justify-content: center;
   font-family: 'Quicksand', sans-serif;

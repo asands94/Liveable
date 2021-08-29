@@ -4,11 +4,19 @@
   flex-direction: column;
 }
 
+.profile-text-container,
 .profile-posts-container {
   display: flex;
+  align-items: stretch;
   justify-content: center;
-  margin-top: 150px
+  margin-top: 150px;
+  color: var(--dark-accent-color)
 }
+
+.profile-posts-container {
+  margin-top: 0
+}
+
 
 .profile-cards {
   position: relative;
@@ -23,7 +31,6 @@
   transform: translate(-50%, -50%);
 }
 
-
 .profile-cards:hover .edit {
   display: flex;
   justify-content: center;
@@ -31,9 +38,7 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* color: #29541e18 */
 }
-
 
 .delete,
 .edit {
@@ -48,10 +53,4 @@
 .delete:hover,
 .edit:hover {
   cursor: pointer;
-}
-
-/* not working */
-.profile-icons {
-  display: flex;
-  flex-direction: column;
 }

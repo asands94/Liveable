@@ -1,7 +1,4 @@
-import { Link } from 'react-router-dom'
 import './About.css'
-import Expand from '../../assets/expand.svg'
-import homeFooter from '../../assets/homefooter.svg'
 
 export default function About() {
   return (

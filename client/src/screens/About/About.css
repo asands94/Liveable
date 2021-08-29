@@ -6,16 +6,12 @@
 
 .about-title {
   margin-top: 150px;
-  color: var(--dark-accent-color)
-}
-
-img.expand-icon {
-  filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
-  margin-top: 50px;
-  width: 75px
+  color: var(--dark-accent-color);
+  font-size: xx-large;
 }
 
 .about-main-text {
   color: var(--main-brand-color);
   text-align: left;
+  font-size: 1.8em;
 }

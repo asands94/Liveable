@@ -19,10 +19,15 @@ const useStyles = makeStyles({
       background: '#29541e62',
       color: '#29541e18',
     },
+    zIndex: 10,
+
   },
   media: {
     width: '10.7vw',
     height: 'calc(10.7vw * (1))',
+    '&:hover': {
+      opacity: .1,
+    },
   },
 });
 
@@ -37,6 +42,7 @@ export default function ImgMediaCard(props) {
         <>
           <CardActionArea>
             <CardMedia
+              classes={{ root: 'class' }}
               className={classes.media}
               component="img"
               alt={post.title}

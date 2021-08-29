@@ -1,7 +1,43 @@
 fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-title {
-  color: var(--main-brand-color)
+  color: var(--main-brand-color);
+  font-size: xx-large;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin: 10px;
+  width: 30vmax;
+  padding: .5vmax
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--main-brand-color);
+  color: var(--light-accent-color);
+  border: none;
+  padding: 15px 0;
+  margin: 10px 0;
+  font-size: large;
+  font-weight: 600;
+  width: 150px
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+select {
+  font-size: large;
 }

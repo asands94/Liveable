@@ -32,15 +32,15 @@ export default function PostCreate(props) {
         <h3 className='form-title'>Share Your Experience</h3>
         <Locations handleChange={handleChange} locations={locations} />
         <input
+          className='input'
           type='text'
           name='title'
           placeholder='TITLE'
           value={formData.title}
           onChange={handleChange}
         />
-        {/* REMOVE BR TAG */}
-        < br />
         <textarea
+          className='input'
           maxLength='250'
           rows="7"
           cols="40"
@@ -48,18 +48,15 @@ export default function PostCreate(props) {
           placeholder='SHARE YOUR STORY'
           value={formData.message}
           onChange={handleChange} />
-        {/* REMOVE BR TAG */}
-        < br />
         <input
+          className='input'
           type='text'
           name='image'
           placeholder='IMAGE URL'
           value={formData.image}
           onChange={handleChange}
         />
-        {/* REMOVE BR TAG */}
-        < br />
-        <button>Submit</button>
+        <button className='submit-button'>Submit</button>
       </fieldset>
     </form>
   );

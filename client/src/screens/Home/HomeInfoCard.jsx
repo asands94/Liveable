@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: '#E6E5D2'
+    backgroundColor: '#f8f7e5'
   },
 });
 
