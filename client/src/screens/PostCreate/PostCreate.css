@@ -30,7 +30,7 @@ select {
   align-self: center;
   background-color: var(--main-brand-color);
   color: var(--light-accent-color);
-  border: none;
+  border: var(--main-brand-color) solid;
   padding: 15px 0;
   margin: 10px 0;
   font-size: large;
@@ -40,4 +40,6 @@ select {
 
 .submit-button:hover {
   cursor: pointer;
+  background-color: var(--main-brand-hover-color-dark);
+  border: var(--main-brand-hover-color-dark) solid;
 }

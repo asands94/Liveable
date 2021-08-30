@@ -1,4 +1,4 @@
-import { Redirect, Link } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import './Profile.css'
 import ProfileCard from './ProfileCard'
 import './Profile.css'

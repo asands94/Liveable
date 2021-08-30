@@ -3,6 +3,7 @@
 :root {
   --main-brand-color: #29541E;
   --main-brand-hover-color: #29541e2a;
+  --main-brand-hover-color-dark: #214b16;
   --dark-accent-color: #9F805B;
   --light-accent-color: #E6E5D2;
 
@@ -33,13 +34,15 @@ code {
 .action-button {
   background-color: var(--main-brand-color);
   color: var(--light-accent-color);
-  border: none;
+  border: var(--main-brand-color) solid;
   padding: 25px 70px;
-  margin: 50px 0 100px 0;
+  margin: 1.5vmax 0 4vmax 0;
   font-size: large;
   font-weight: 600;
 }
 
 .action-button:hover {
   cursor: pointer;
+  background-color: var(--main-brand-hover-color-dark);
+  border: var(--main-brand-hover-color-dark) solid;
 }

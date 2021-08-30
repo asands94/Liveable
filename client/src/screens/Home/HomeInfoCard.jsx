@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   cardDark: {
     width: '20vw',
     height: 'calc(20vw * (1/2))',
-    margin: 20,
+    margin: 10,
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: '#9F805B'
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   cardLight: {
     width: '20vw',
     height: 'calc(20vw * (1/2))',
-    margin: 20,
+    margin: 10,
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: '#f8f7e5'

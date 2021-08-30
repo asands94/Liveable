@@ -4,7 +4,7 @@ import './Posts.css'
 export default function Posts(props) {
   const { posts } = props;
   return (
-    <>
+    <div className='main-post-container'>
       <div className='all-posts-container'>
         {posts.reverse().map((post, index) => (
           <div className='post-cards' key={index}>
@@ -12,6 +12,6 @@ export default function Posts(props) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }

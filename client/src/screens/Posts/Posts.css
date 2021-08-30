@@ -1,19 +1,12 @@
-.all-posts-container {
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(5, 5.5vmax);
-  grid-auto-rows: 2vmax;
-  column-gap: 120px;
-  row-gap: 190px;
+.main-post-container {
   width: 70vw;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-
-.post-cards {
-  /* border: solid purple; */
+.all-posts-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
-  margin-top: 150px
+  margin-top: 150px;
 }

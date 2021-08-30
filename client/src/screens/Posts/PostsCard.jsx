@@ -9,9 +9,9 @@ import PostDetail from '../PostDetail/PostDetail';
 
 const useStyles = makeStyles({
   root: {
-    width: '10.7vw',
-    height: 'calc(10.7vw * (1))',
-    margin: 20,
+    width: '15vw',
+    height: 'calc(15vw * (1))',
+    margin: 12,
     display: 'flex',
     justifyContent: 'center',
     color: '#29541e',
@@ -22,8 +22,8 @@ const useStyles = makeStyles({
     },
   },
   media: {
-    width: '10.7vw',
-    height: 'calc(10.7vw * (1))',
+    width: '15vw',
+    height: 'calc(15vw * (1))',
     '&:hover': {
       opacity: .05,
     },
