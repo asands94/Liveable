@@ -13,10 +13,10 @@ export default function PostDetails(props) {
   const { open, handleClose, posts } = props;
   return (
     <div>
-      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+      <Dialog style={{ background: '#29541E98' }} open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         {posts.image && <CardActionArea>
           <CardMedia
-            classes={{ root: 'class' }}
+            // classes={{ root: 'class' }}
             component="img"
             alt={posts?.title}
             image={posts?.image}

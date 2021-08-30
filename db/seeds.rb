@@ -42,7 +42,7 @@ end
 end
 
 2.times do
-  Post.create!(location: @location4, title: 'Not with the price', message: 'I\'ve seen cheese with less mold than this place.', user: @admin)
+  Post.create!(location: @location4, title: 'Not worth the price', message: 'I\'ve seen cheese with less mold than this place.', user: @admin)
 end
 
 puts "#{Post.count} posts created"
