@@ -54,3 +54,9 @@
 .edit:hover {
   cursor: pointer;
 }
+
+.post-detail-button {
+  border: none;
+  background: none;
+  padding: 0;
+}

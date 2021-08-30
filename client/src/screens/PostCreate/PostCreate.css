@@ -1,7 +1,16 @@
+form {
+  display: flex;
+  justify-content: center;
+}
+
 fieldset {
   border: none;
   display: flex;
   flex-direction: column;
+}
+
+select {
+  font-size: large;
 }
 
 .form-title {
@@ -9,15 +18,10 @@ fieldset {
   font-size: xx-large;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-}
-
 .input {
   margin: 10px;
   width: 30vmax;
-  padding: .5vmax
+  padding: .5vmax;
 }
 
 .submit-button {
@@ -36,8 +40,4 @@ form {
 
 .submit-button:hover {
   cursor: pointer;
-}
-
-select {
-  font-size: large;
 }

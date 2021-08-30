@@ -47,7 +47,8 @@ export default function PostCreate(props) {
           name='message'
           placeholder='SHARE YOUR STORY'
           value={formData.message}
-          onChange={handleChange} />
+          onChange={handleChange}
+        />
         <input
           className='input'
           type='text'
