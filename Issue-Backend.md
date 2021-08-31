@@ -28,7 +28,7 @@ Trying to push categories into posts. A post should have my categories and a cat
 > Include the exact error message, and if helpful, any supplemental documentation, such as screen captures.
 
 ```md
-No error message, just checking my backend routes and I see the data is not beingpushed into the posts table correctly
+No error message, just checking my backend routes and I see the data is not being pushed into the posts table correctly
 ```
 
 ## Attempted Resolution
