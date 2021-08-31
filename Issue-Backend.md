@@ -4,7 +4,7 @@
 
 ## Unexpected Behavior
 
-> All categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
+All categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
 
 ## Expected Behavior
 
@@ -16,10 +16,11 @@ Trying to push categories into posts. A post should have my categories and a cat
 
 ```md
 1. Clone this repo.
-2. Run `npm start`.
-3. Navigate to the home page.
-4. submit a form and click on one or two of the checkbox options
-(it will create the post hoever in the backend I can see that the category was not appropriate)
+2. Run `rails s`.
+3. Run `npm start`.
+4. Navigate to the home page.
+5. Scroll to bottom and submit form and click on one or two of the checkbox options (or none)
+(it will create the post however in the backend I can see that the  correct category was not given to the post)
 ```
 
 ## Documentation
