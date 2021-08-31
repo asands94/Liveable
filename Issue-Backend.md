@@ -4,7 +4,7 @@
 
 ## Unexpected Behavior
 
-> Describe your issue, question, or bug with a clear and concise description.
+> CAll categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
 
 ## Expected Behavior
 
