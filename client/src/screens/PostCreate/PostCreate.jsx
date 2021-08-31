@@ -25,7 +25,6 @@ export default function PostCreate(props) {
       [name]: value,
     }));
   };
-  console.log(formData)
   const isDisabled = currentUser === null ? true : false
 
   return (
@@ -55,7 +54,7 @@ export default function PostCreate(props) {
               rows="7"
               cols="40"
               name='message'
-              placeholder='SHARE YOUR STORY'
+              placeholder='SHARE YOUR EXPERIENCE'
               value={formData.message}
               onChange={handleChange}
             />

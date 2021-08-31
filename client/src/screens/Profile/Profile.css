@@ -14,12 +14,22 @@
 }
 
 .profile-posts-container {
-  margin-top: 0
+  margin-top: 0;
+  overflow: scroll;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.profile-posts-container::-webkit-scrollbar {
+  display: none;
 }
 
 
 .profile-cards {
   position: relative;
+
 }
 
 .delete,

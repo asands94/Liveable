@@ -5,7 +5,6 @@ import { getAllPosts, createPost, updatePost, deletePost } from '../services/pos
 import { getAllCategories } from '../services/categories';
 import { getAllLocations } from '../services/locations';
 
-import Posts from '../screens/Posts/Posts';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import Home from '../screens/Home/Home';
 import Profile from '../screens/Profile/Profile';
@@ -48,7 +47,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const postData = await createPost(formData);
     setPosts((prevState) => [...prevState, postData]);
-    history.push(`/posts`);
+    history.push(`/profile/${currentUser.username}`);
   };
 
   const handleUpdate = async (id, formData) => {
@@ -58,7 +57,7 @@ export default function MainContainer(props) {
         return post.id === Number(id) ? postData : post;
       })
     );
-    history.push(`/profile/${currentUser.name}`);
+    history.push(`/profile/${currentUser.username}`);
   };
 
   const handleDelete = async (id) => {

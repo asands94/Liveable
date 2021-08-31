@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   width: 70vw;
-  overflow: scroll;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; */
   /* seems to do nothing atm*/
   margin: auto;
   /* IE and Edge */

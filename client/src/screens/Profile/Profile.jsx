@@ -10,7 +10,7 @@ export default function Profile(props) {
     return <Redirect to='/' />
   }
 
-  if (!posts) return "Loading"
+  if (!posts.length) return "Loading"
   return (
     <>
       <div className='profile-container'>
@@ -21,11 +21,12 @@ export default function Profile(props) {
           {posts.map((post, index) => (
             <div key={index} className='profile-cards'>
               {post.user_id === currentUser.id &&
-                index < 4 ? (<ProfileCard
+
+                <ProfileCard
                   handleDelete={handleDelete}
                   handleUpdate={handleUpdate}
                   post={post}
-                  currentUser={currentUser} />) : null}
+                  currentUser={currentUser} />}
             </div>
           ))}
         </div>

@@ -62,7 +62,7 @@ export default function PostCreateModal(props) {
             margin="dense"
             maxLength='250'
             name='message'
-            placeholder='SHARE YOUR STORY'
+            placeholder='SHARE YOUR EXPERIENCE'
             value={formData.message}
             onChange={handleChange}
             fullWidth
