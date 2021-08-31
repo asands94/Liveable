@@ -4,7 +4,7 @@
 
 ## Unexpected Behavior
 
-> CAll categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
+> All categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
 
 ## Expected Behavior
 
