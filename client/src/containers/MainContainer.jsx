@@ -47,7 +47,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const postData = await createPost(formData);
     setPosts((prevState) => [...prevState, postData]);
-    history.push(`/profile/${currentUser.username}`);
+    history.push(`/posts`);
   };
 
   const handleUpdate = async (id, formData) => {
