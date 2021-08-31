@@ -8,23 +8,36 @@ export default function PostCreate(props) {
   const [formData, setFormData] = useState({
     location_id: '',
     title: '',
+    categories: [],
     message: '',
-    image: ''
+    photo: ''
   });
 
   const { handleCreate, locations, currentUser, categories } = props;
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    // type === 'checkbox' ?
-    //   setFormData((prevState) => ({
-    //     ...prevState,
-    //     [name]: checked,
-    //   })) :
+    const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
+
+  const handleChangeChecked = (e) => {
+    const { value, checked } = e.target;
+    if (checked) {
+      setFormData((prevState) => ({
+        ...prevState,
+        categories: [...prevState.categories, value],
+      }));
+    } else {
+      setFormData((prevState) => ({
+        ...prevState,
+        categories: prevState.categories.filter((cat) => cat !== value),
+      }));
+    }
+  };
+
+
   const isDisabled = currentUser === null ? true : false
 
   return (
@@ -39,7 +52,7 @@ export default function PostCreate(props) {
           <fieldset disabled={isDisabled}>
             <h3 className='form-title'>Share Your Experience</h3>
             <Locations handleChange={handleChange} locations={locations} />
-            <Categories formData={formData} handleChange={handleChange} categories={categories} />
+            <Categories formData={formData} handleChange={handleChangeChecked} categories={categories} />
             <input
               className='input'
               type='text'
@@ -63,7 +76,7 @@ export default function PostCreate(props) {
               type='text'
               name='image'
               placeholder='IMAGE URL'
-              value={formData.image}
+              value={formData.photo}
               onChange={handleChange}
             />
             <button className='submit-button'>Submit</button>

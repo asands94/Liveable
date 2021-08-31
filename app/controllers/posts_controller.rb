@@ -15,11 +15,10 @@ class PostsController < ApplicationController
 
   # POST /posts
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(post_params.except('categories'))
     @post.user = @current_user
-    @category = Category.all
-    @post.categories << @category
-    # @post.categories << Category.find(params[:category_id])
+    @categories = Category.find(post_params[:categories])
+    @post.categories = @categories
     if @post.save
       render json: @post, status: :created
     else
@@ -50,6 +49,6 @@ class PostsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def post_params
-    params.require(:post).permit(:title, :message, :image, :user_id, :location_id, :categories)
+    params.require(:post).permit(:title, :message, :image, :user_id, :location_id, categories:[])
   end
 end

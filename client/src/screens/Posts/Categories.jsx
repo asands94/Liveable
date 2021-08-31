@@ -9,7 +9,7 @@ export default function Categories(props) {
           <input
             name={category.name}
             onChange={handleChange}
-            // checked={formData.category?.id}
+            // checked={formData.categories.includes(category.id)}
             value={category.id}
             type='checkbox'
           />
