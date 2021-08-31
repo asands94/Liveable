@@ -13,9 +13,16 @@ select {
   font-size: large;
 }
 
+.post-form-container {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+}
+
 .form-title {
   color: var(--main-brand-color);
   font-size: xx-large;
+  margin-top: 150px;
 }
 
 .input {

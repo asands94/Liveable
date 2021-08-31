@@ -1,11 +1,10 @@
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import './Profile.css'
 import ProfileCard from './ProfileCard'
 import './Profile.css'
-import PostCreateModal from '../PostCreate/PostCreateModal';
 import Footer from '../../layouts/Footer'
 export default function Profile(props) {
-  const { currentUser, posts, handleUpdate, handleDelete, locations, handleCreate, categories } = props;
+  const { currentUser, posts, handleUpdate, handleDelete } = props;
 
   if (!currentUser) {
     return <Redirect to='/' />
@@ -32,10 +31,7 @@ export default function Profile(props) {
         </div>
 
       </div>
-      <PostCreateModal
-        categories={categories}
-        locations={locations}
-        handleCreate={handleCreate} />
+      <Link to='/posts/new'><button className='action-button'>NEW POST</button></Link>
       <Footer />
     </>
   )

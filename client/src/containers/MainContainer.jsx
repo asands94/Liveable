@@ -11,6 +11,8 @@ import Home from '../screens/Home/Home';
 import Profile from '../screens/Profile/Profile';
 import NotFound from '../screens/NotFound/NotFound';
 import About from '../screens/About/About';
+import PostCreate from '../screens/PostCreate/PostCreate';
+import PostsFilter from '../screens/Posts/PostsFilter';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -67,15 +69,24 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
+        <Route exact path='/posts/new'>
+          <PostCreate
+            categories={categories}
+            locations={locations}
+            handleCreate={handleCreate}
+          />
+        </Route>
         <Route exact path='/posts/:id/edit'>
           <PostEdit
+            categories={categories}
             posts={posts}
             handleUpdate={handleUpdate}
             locations={locations}
           />
         </Route>
         <Route exact path='/posts'>
-          <Posts
+          <PostsFilter
+            locations={locations}
             posts={posts}
             handleDelete={handleDelete}
             currentUser={currentUser}

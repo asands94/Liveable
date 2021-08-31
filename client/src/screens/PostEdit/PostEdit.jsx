@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Locations from '../Posts/Locations';
+import Categories from '../Posts/Categories';
 import './PostEdit.css'
 import Footer from '../../layouts/Footer'
 
@@ -12,7 +13,7 @@ export default function PostEdit(props) {
     image: ''
   });
 
-  const { handleUpdate, posts, locations } = props;
+  const { handleUpdate, posts, locations, categories } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function PostEdit(props) {
           <fieldset>
             <h3 className='form-title-edit'>Share Your Experience</h3>
             <Locations handleChange={handleChange} locations={locations} />
+            <Categories formData={formData} handleChange={handleChange} categories={categories} />
             <input
               className='input'
               type='text'

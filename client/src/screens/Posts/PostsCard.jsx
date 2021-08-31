@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     color: '#29541e',
     '&:hover': {
-      background: '#29541e62',
-      color: '#29541e18',
+      background: '#29541e68',
+      color: '#29541e68',
       cursor: 'pointer'
     },
   },
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     width: '15vw',
     height: 'calc(15vw * (1))',
     '&:hover': {
-      opacity: .05,
+      opacity: .1,
     },
   },
 });
