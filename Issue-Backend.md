@@ -4,7 +4,7 @@
 
 ## Unexpected Behavior
 
-All categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend.
+All categories are being pushed into a post whether all or none are actually checked off. I can see this in my backend. I know at least part of the issue is in my posts controller
 
 ## Expected Behavior
 
