@@ -22,7 +22,7 @@ select {
 .form-title {
   color: var(--main-brand-color);
   font-size: xx-large;
-  margin-top: 150px;
+  margin-top: var(--margin-top);
 }
 
 .input {

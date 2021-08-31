@@ -229,7 +229,7 @@ src
 | Sign Up JS |    H     |      1hrs      |      1.5hrs     |     hrs     |
 | Login JS |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Create posts functionality |    H     |      1hrs      |      7hrs     |     hrs     |
-| Show posts functionality |    H     |      1hrs      |      .5hrs     |     hrs     |
+| Show posts functionality |    H     |      1hrs      |      2.5hrs     |     hrs     |
 | Update posts functionality |    H     |      1hrs      |      .5hrs     |     hrs     |
 | Delete posts functionality |    H     |      .5hrs      |      .5hrs     |     hrs     |
 | Create profile page (JS) |    H     |      1hrs      |      2hrs     |     hrs     |
@@ -248,7 +248,7 @@ src
 | PMPV - Add share button |    L     |      1hrs      |      hrs     |     hrs     |
 | PMPV - users add image from computer |    L     |      5hrs      |      hrs     |     hrs     |
 | PMPV - generate random username on sign up |    L     |      5hrs      |      hrs     |     hrs     |
-| TOTAL               |          |      52.5hrs      |      33.5hrs     |     hrs     |
+| TOTAL               |          |      52.5hrs      |      35.5hrs     |     hrs     |
 
 <br>
 

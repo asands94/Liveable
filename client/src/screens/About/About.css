@@ -6,9 +6,10 @@
 }
 
 .about-title {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   color: var(--dark-accent-color);
   font-size: xx-large;
+  padding: 0
 }
 
 .about-main-text {
@@ -20,7 +21,7 @@
 .about-house {
   position: absolute;
   right: 27vmax;
-  bottom: -0.5vmax;
+  bottom: 1.5vmax;
   width: 12vw;
   z-index: -1;
 }

@@ -5,6 +5,6 @@
 }
 
 .not-found-text {
-  margin-top: 150px;
+  margin-top: var(--margin-top);
   color: var(--dark-accent-color)
 }

@@ -24,7 +24,7 @@
 }
 
 .home-post-cards {
-  margin-top: 150px;
+  margin-top: var(--margin-top);
 }
 
 img.expand-icon {
