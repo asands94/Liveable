@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import SignUp from '../screens/SignUp/SignUp'
 import Login from '../screens/Login/Login'
 import './Layouts.css'
 import profile from '../assets/profile.svg'
-import Footer from "./Footer";
 
 export default function Layout(props) {
   const [scroll, setScroll] = useState(false);

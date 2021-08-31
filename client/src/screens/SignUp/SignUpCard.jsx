@@ -98,9 +98,9 @@ export default function FormDialog(props) {
         </DialogActions>
         <CardMedia style={{ transform: 'rotate(0deg)', position: 'relative', bottom: 0, background: '#E6E5D2' }}
           component="img"
-          alt='login'
+          alt='footer'
           image={home}
-          title='login image'
+          title='footer'
         />
       </Dialog>
     </div>

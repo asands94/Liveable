@@ -7,7 +7,7 @@ import Expand from '../../assets/expand.svg'
 import homeFooter from '../../assets/homefooter.svg'
 
 export default function Home(props) {
-  const { posts, handleCreate, locations, currentUser } = props;
+  const { posts, handleCreate, locations, currentUser, categories } = props;
   return (
     <>
       <div className='posts-info-container'>
@@ -27,6 +27,7 @@ export default function Home(props) {
       </div>
       <img className='expand-icon' src={Expand} alt='expand icon' />
       <PostCreate
+        categories={categories}
         currentUser={currentUser}
         locations={locations}
         handleCreate={handleCreate}

@@ -37,11 +37,6 @@
   filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
 }
 
-/* .nav-profile::backdrop {
-  filter: invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%);
-
-
-} */
 
 .nav-button:hover,
 .nav-profile:hover {
@@ -51,4 +46,12 @@
 .website-name a {
   text-decoration: none;
   color: var(--main-brand-color)
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  /* margin: 0 auto */
 }

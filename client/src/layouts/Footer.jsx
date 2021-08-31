@@ -1,10 +1,9 @@
 import React from 'react'
-
+import footer from '../assets/homefooter.svg'
 export default function Footer() {
   return (
     <footer>
-      FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER
-      FOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTERFOOTER
+      <img className='footer' src={footer} alt='footer' />
     </footer>
   )
 }

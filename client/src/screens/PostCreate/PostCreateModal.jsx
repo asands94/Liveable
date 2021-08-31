@@ -6,6 +6,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Locations from '../Posts/Locations';
+import Categories from '../Posts/Categories';
 
 export default function PostCreateModal(props) {
   const [formData, setFormData] = useState({
@@ -15,7 +16,7 @@ export default function PostCreateModal(props) {
     image: ''
   });
 
-  const { handleCreate, locations } = props;
+  const { handleCreate, locations, categories } = props;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -39,11 +40,13 @@ export default function PostCreateModal(props) {
       <button className='action-button' variant="outlined" color="primary" onClick={handleClickOpen}>
         NEW POST
       </button>
-      <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Share Your Experience</DialogTitle>
-        <DialogContent>
+      <Dialog style={{ background: '#29541E98' }} open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+        <DialogTitle style={{ color: '#29541E', background: '#E6E5D2', textAlign: 'center' }} id="form-dialog-title">Share Your Experience</DialogTitle>
+        <DialogContent style={{ background: '#E6E5D2' }}>
           <Locations handleChange={handleChange} locations={locations} />
+          <Categories handleChange={handleChange} categories={categories} />
           <TextField
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             type='text'
@@ -54,6 +57,7 @@ export default function PostCreateModal(props) {
             fullWidth
           />
           <TextField
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             maxLength='250'
@@ -64,6 +68,7 @@ export default function PostCreateModal(props) {
             fullWidth
           />
           <TextField
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             name='image'
@@ -73,8 +78,8 @@ export default function PostCreateModal(props) {
             fullWidth
           />
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
+        <DialogActions style={{ background: '#E6E5D2' }}>
+          <Button onClick={handleClose} style={{ color: '#29541E' }}>
             Cancel
           </Button>
           <Button
@@ -82,7 +87,7 @@ export default function PostCreateModal(props) {
               e.preventDefault();
               handleCreate(formData);
             }}
-            color="primary"
+            style={{ color: '#29541E' }}
           >
             SUBMIT
           </Button>

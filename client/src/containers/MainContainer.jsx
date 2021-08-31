@@ -8,11 +8,9 @@ import { getAllLocations } from '../services/locations';
 import Posts from '../screens/Posts/Posts';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import Home from '../screens/Home/Home';
-import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 import Profile from '../screens/Profile/Profile';
 import NotFound from '../screens/NotFound/NotFound';
 import About from '../screens/About/About';
-import PostDetails from '../screens/PostDetail/PostDetail';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -58,7 +56,7 @@ export default function MainContainer(props) {
         return post.id === Number(id) ? postData : post;
       })
     );
-    history.push('/posts');
+    history.push(`/profile/${currentUser.name}`);
   };
 
   const handleDelete = async (id) => {
@@ -76,19 +74,6 @@ export default function MainContainer(props) {
             locations={locations}
           />
         </Route>
-        <Route exact path='/posts/:id'>
-          <PostDetails
-            posts={posts}
-            handleUpdate={handleUpdate}
-            locations={locations}
-          />
-        </Route>
-        {/* <Route exact path='/posts/:id'>
-          <CategoriesAdd
-            categories={categories}
-            locations={locations}
-          />
-        </Route> */}
         <Route exact path='/posts'>
           <Posts
             posts={posts}
@@ -98,6 +83,7 @@ export default function MainContainer(props) {
         </Route>
         <Route exact path='/profile/:username'>
           <Profile
+            categories={categories}
             handleCreate={handleCreate}
             handleUpdate={handleUpdate}
             handleDelete={handleDelete}
@@ -116,6 +102,7 @@ export default function MainContainer(props) {
         </Route>
         <Route exact path='/'>
           <Home
+            categories={categories}
             locations={locations}
             posts={posts}
             handleCreate={handleCreate}

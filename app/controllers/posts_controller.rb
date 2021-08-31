@@ -17,6 +17,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = @current_user
+    @category = Category.all
+    @post.categories << @category
+    # @post.categories << Category.find(params[:category_id])
     if @post.save
       render json: @post, status: :created
     else

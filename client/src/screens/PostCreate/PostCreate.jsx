@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Categories from '../Posts/Categories';
 import Locations from '../Posts/Locations';
 import './PostCreate.css'
 
@@ -10,15 +11,20 @@ export default function PostCreate(props) {
     image: ''
   });
 
-  const { handleCreate, locations, currentUser } = props;
+  const { handleCreate, locations, currentUser, categories } = props;
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
+    // type === 'checkbox' ?
+    //   setFormData((prevState) => ({
+    //     ...prevState,
+    //     [name]: checked,
+    //   })) :
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
-
+  console.log(formData)
   const isDisabled = currentUser === null ? true : false
 
   return (
@@ -31,6 +37,7 @@ export default function PostCreate(props) {
       <fieldset disabled={isDisabled}>
         <h3 className='form-title'>Share Your Experience</h3>
         <Locations handleChange={handleChange} locations={locations} />
+        <Categories formData={formData} handleChange={handleChange} categories={categories} />
         <input
           className='input'
           type='text'

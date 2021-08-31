@@ -3,9 +3,9 @@ import './Profile.css'
 import ProfileCard from './ProfileCard'
 import './Profile.css'
 import PostCreateModal from '../PostCreate/PostCreateModal';
-
+import Footer from '../../layouts/Footer'
 export default function Profile(props) {
-  const { currentUser, posts, handleUpdate, handleDelete, locations, handleCreate } = props;
+  const { currentUser, posts, handleUpdate, handleDelete, locations, handleCreate, categories } = props;
 
   if (!currentUser) {
     return <Redirect to='/' />
@@ -25,15 +25,18 @@ export default function Profile(props) {
                 index < 4 ? (<ProfileCard
                   handleDelete={handleDelete}
                   handleUpdate={handleUpdate}
-                  post={post} />) : null}
+                  post={post}
+                  currentUser={currentUser} />) : null}
             </div>
           ))}
         </div>
 
       </div>
       <PostCreateModal
+        categories={categories}
         locations={locations}
         handleCreate={handleCreate} />
+      <Footer />
     </>
   )
 }

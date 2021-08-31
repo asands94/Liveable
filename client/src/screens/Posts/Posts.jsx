@@ -1,5 +1,6 @@
 import PostsCard from './PostsCard'
 import './Posts.css'
+import Footer from '../../layouts/Footer';
 
 export default function Posts(props) {
   const { posts } = props;
@@ -12,6 +13,7 @@ export default function Posts(props) {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
