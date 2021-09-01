@@ -67,7 +67,7 @@ export default function PostEdit(props) {
               rows="7"
               cols="40"
               name='message'
-              placeholder='SHARE YOUR STORY'
+              placeholder='SHARE YOUR EXPERIENCE (250 characters max)'
               value={formData.message}
               onChange={handleChange}
             />
