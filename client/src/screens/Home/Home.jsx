@@ -41,7 +41,6 @@ export default function Home(props) {
         locations={locations}
         handleCreate={handleCreate}
       />
-      <img className='home-footer' src={homeFooter} alt='home footer' />
     </>
   )
 }
