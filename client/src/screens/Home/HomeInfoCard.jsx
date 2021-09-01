@@ -30,7 +30,7 @@ export default function HomeInfoCard() {
     <>
       <Card className={classes.cardDark}>
         <CardContent>
-          <Typography variant="body2" classes={{ root: 'home-text' }} component="p">
+          <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>ISSUES</h4>
             <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
               accountable do to housing security. </p>
@@ -39,7 +39,7 @@ export default function HomeInfoCard() {
       </Card>
       <Card className={classes.cardLight}>
         <CardContent>
-          <Typography variant="body2" classes={{ root: 'home-text-light' }} component="p">
+          <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
             <h4>OUR GOAL</h4>
             <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
               accountable do to housing security. </p>
@@ -48,7 +48,7 @@ export default function HomeInfoCard() {
       </Card>
       <Card className={classes.cardDark}>
         <CardContent>
-          <Typography variant="body2" classes={{ root: 'home-text' }} component="p">
+          <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>HOW YOU CAN HELP</h4>
             <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
               accountable do to housing security. </p>
@@ -57,7 +57,7 @@ export default function HomeInfoCard() {
       </Card>
       <Card className={classes.cardLight}>
         <CardContent>
-          <Typography variant="body2" classes={{ root: 'home-text-light' }} component="p">
+          <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
             <h4>LEARN MORE</h4>
             <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
               accountable do to housing security. </p>
