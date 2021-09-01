@@ -22,14 +22,34 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     backgroundColor: '#f8f7e5'
   },
+  cardDarkM: {
+    width: 250,
+    height: 125,
+    margin: 10,
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#9F805B',
+    overflow: 'scroll'
+  },
+  cardLightM: {
+    width: 250,
+    height: 125,
+    margin: 10,
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#f8f7e5',
+    overflow: 'scroll'
+  },
 });
+
 
 export default function HomeInfoCard() {
   const classes = useStyles();
 
+
   return (
     <>
-      <Card className={classes.cardDark}>
+      <Card className={window.screen.width <= 900 ? classes.cardDarkM : classes.cardDark}>
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>ISSUES</h4>
@@ -38,7 +58,7 @@ export default function HomeInfoCard() {
           </Typography>
         </CardContent>
       </Card>
-      <Card className={classes.cardLight}>
+      <Card className={window.screen.width <= 900 ? classes.cardLightM : classes.cardLight}>
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
             <h4>OUR GOAL</h4>
@@ -46,7 +66,7 @@ export default function HomeInfoCard() {
           </Typography>
         </CardContent>
       </Card>
-      <Card className={classes.cardDark}>
+      <Card className={window.screen.width <= 900 ? classes.cardDarkM : classes.cardDark}>
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>HOW YOU CAN HELP</h4>
@@ -54,7 +74,7 @@ export default function HomeInfoCard() {
           </Typography>
         </CardContent>
       </Card>
-      <Card className={classes.cardLight}>
+      <Card className={window.screen.width <= 900 ? classes.cardLightM : classes.cardLight}>
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
             <Link className='about-link' to='/about'><h4>LEARN MORE</h4></Link>

@@ -29,6 +29,29 @@ const useStyles = makeStyles({
     justifySelf: 'left',
     color: '#29541e',
   },
+  mediaM: {
+    width: 125,
+    height: 125,
+    display: 'flex',
+    justifySelf: 'left',
+    color: '#29541e',
+  },
+  allM: {
+    width: 250,
+    height: 125,
+    margin: 10,
+    display: 'flex',
+    color: '#29541e',
+  },
+  textOnlyM: {
+    width: 125,
+    height: 125,
+    margin: 10,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#29541e',
+  },
 
 });
 
@@ -40,9 +63,9 @@ export default function HomePostCard(props) {
   return (
     <>
       {post.image ?
-        (<Card className={classes.all}>
+        (<Card className={window.screen.width <= 900 ? classes.allM : classes.all}>
           <CardMedia
-            className={classes.media}
+            className={window.screen.width <= 900 ? classes.mediaM : classes.media}
             component="img"
             alt={post.title}
             image={post.image}
@@ -54,7 +77,7 @@ export default function HomePostCard(props) {
             </Typography>
           </CardContent>
         </Card>
-        ) : (<Card className={classes.textOnly}>
+        ) : (<Card className={window.screen.width <= 900 ? classes.textOnlyM : classes.textOnly}>
           <CardContent>
             <Typography variant="body2" component="p">
               {(post.message).length > 50 ? (post.message).substring(0, 50) + "..." : post.message}

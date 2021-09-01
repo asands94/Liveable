@@ -8,8 +8,10 @@ import PostDetail from '../PostDetail/PostDetail';
 
 const useStyles = makeStyles({
   root: {
-    width: '11vw',
-    height: 'calc(11vw * (1))',
+    // width: '11vw',
+    // height: 'calc(11vw * (1))',
+    width: 250,
+    height: 250,
     margin: 12,
     display: 'flex',
     justifyContent: 'center',
@@ -22,8 +24,10 @@ const useStyles = makeStyles({
     },
   },
   media: {
-    width: '11vw',
-    height: 'calc(11vw * (1))',
+    width: 250,
+    height: 250,
+    // width: '11vw',
+    // height: 'calc(11vw * (1))',
     '&:hover': {
       opacity: .1,
     },

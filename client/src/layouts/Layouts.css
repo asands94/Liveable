@@ -10,6 +10,11 @@
   z-index: 1;
 }
 
+.mobile-header {
+  display: none;
+
+}
+
 .scroll {
   border-bottom: var(--main-brand-color) solid 1px;
   right: 0;
@@ -56,4 +61,26 @@
   right: 0;
   z-index: -1;
   margin-top: 200px
+}
+
+@media only screen and (max-width: 900px) {
+
+  .mobile-header {
+    display: block;
+    text-align: center;
+    width: 70vw;
+  }
+
+  .nav-header {
+    display: none;
+  }
+
+  .mobile-title {
+    text-align: center;
+    color: var(--main-brand-color);
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+  }
 }
