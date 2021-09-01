@@ -1,3 +1,6 @@
+import search from '../../assets/search.svg'
+import TextField from '@material-ui/core/TextField';
+
 export default function Search(props) {
 
   const { locations, handleSearch, handleSearchInput } = props;
@@ -5,14 +8,16 @@ export default function Search(props) {
   return (
     <div className='filter-search'>
       <form>
-        <input
-          className="search-input"
+
+        <TextField
+          classes={{ input: "search-input" }}
+          label={<img src={search} alt='none' />}
           value={props.value}
           onChange={(e) => handleSearchInput(e)}
           name="Search"
           placeholder="Search"
           type="text"
-          autoFocus />
+        />
       </form>
 
       <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>

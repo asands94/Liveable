@@ -7,15 +7,15 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   all: {
-    width: '24vw',
-    height: 'calc(24vw * (1/2))',
+    width: '20vw',
+    height: 'calc(20vw * (1/2))',
     margin: 20,
     display: 'flex',
     color: '#29541e',
   },
   textOnly: {
-    width: '12vw',
-    height: 'calc(24vw * (1/2))',
+    width: '10vw',
+    height: 'calc(20vw * (1/2))',
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
@@ -23,8 +23,8 @@ const useStyles = makeStyles({
     color: '#29541e',
   },
   media: {
-    width: '12vw',
-    height: 'calc(24vw * (1/2))',
+    width: '10vw',
+    height: 'calc(20vw * (1/2))',
     display: 'flex',
     justifySelf: 'left',
     color: '#29541e',

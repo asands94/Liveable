@@ -16,7 +16,6 @@
 
 .empty {
   margin-top: var(--margin-top);
-  /* margin-top: 500px */
 }
 
 .posts-info-container::-webkit-scrollbar {

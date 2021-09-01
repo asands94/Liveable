@@ -50,8 +50,9 @@
 
 .footer {
   width: 100vw;
-  position: absolute;
+  position: fixed;
   /* bottom: -60vmax; */
+  bottom: -250px;
   right: 0;
   z-index: -1;
   margin-top: 200px

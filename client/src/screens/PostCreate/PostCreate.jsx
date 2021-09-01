@@ -44,6 +44,7 @@ export default function PostCreate(props) {
     <>
       <div className='post-form-container'>
         <form
+          className='create-form'
           onSubmit={(e) => {
             e.preventDefault();
             handleCreate(formData);
@@ -76,7 +77,7 @@ export default function PostCreate(props) {
               type='text'
               name='image'
               placeholder='IMAGE URL'
-              value={formData.photo}
+              value={formData.image}
               onChange={handleChange}
             />
             <button className='submit-button'>Submit</button>

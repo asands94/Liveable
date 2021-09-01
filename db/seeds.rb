@@ -15,7 +15,7 @@ User.destroy_all
 # puts "#{User.count} users created"
 
 @category = Category.create!(name: 'Housing Security')
-@category2 = Category.create!(name: 'House Maintainence')
+@category2 = Category.create!(name: 'House Maintenance')
 @category3 = Category.create!(name: 'Prices')
 puts "#{Category.count} categories created"
 

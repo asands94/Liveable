@@ -1,5 +1,5 @@
 .posts-filter {
-  margin-top: 50px
+  /* margin-top: 50px */
 }
 
 .main-post-container {
@@ -22,13 +22,18 @@
 
 .filter-search {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  /* height: 900px; */
 }
 
 .search-input {
-  margin: 20px;
-  border: none;
   font-size: large;
   background: none;
   border-bottom: black solid 1px;
+}
+
+.search-form {
+  margin-top: 50px
 }
