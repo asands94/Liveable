@@ -1,4 +1,5 @@
-.posts-info-container {
+.posts-info-container,
+.info-container {
   display: flex;
   justify-content: center;
   width: 70vw;
@@ -15,6 +16,7 @@
 
 .empty {
   margin-top: var(--margin-top);
+  /* margin-top: 500px */
 }
 
 .posts-info-container::-webkit-scrollbar {
@@ -43,7 +45,7 @@ img.expand-icon {
 .home-footer {
   width: 100vw;
   position: absolute;
+  /* bottom: 0; */
   right: 0;
-  z-index: -1;
-  /* margin: 0 auto */
+  z-index: 1;
 }

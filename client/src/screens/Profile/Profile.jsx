@@ -10,14 +10,13 @@ export default function Profile(props) {
     return <Redirect to='/' />
   }
 
-  if (!posts.length) return "Loading"
   return (
     <>
       <div className='profile-container'>
         <div className='profile-text-container'>
           <h1>My Posts</h1>
         </div>
-        <div className='profile-posts-container'>
+        {posts.length !== 0 ? (<div className='profile-posts-container'>
           {posts.map((post, index) => (
             <div key={index} className='profile-cards'>
               {post.user_id === currentUser.id &&
@@ -29,7 +28,8 @@ export default function Profile(props) {
                   currentUser={currentUser} />}
             </div>
           ))}
-        </div>
+        </div>) :
+          (null)}
 
       </div>
       <Link to='/posts/new'><button className='action-button'>NEW POST</button></Link>

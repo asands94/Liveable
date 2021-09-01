@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     margin: 20,
     display: 'flex',
     justifyContent: 'center',
+    alignItems: 'center',
     color: '#29541e',
   },
   media: {
