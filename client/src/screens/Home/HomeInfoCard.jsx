@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   },
   cardDarkM: {
     width: 250,
-    height: 125,
+    height: 200,
     margin: 10,
     display: 'flex',
     justifyContent: 'center',
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   },
   cardLightM: {
     width: 250,
-    height: 125,
+    height: 200,
     margin: 10,
     display: 'flex',
     justifyContent: 'center',

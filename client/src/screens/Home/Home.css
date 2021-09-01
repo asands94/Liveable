@@ -53,16 +53,11 @@ img.expand-icon {
   color: var(--dark-accent-color)
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
-  .posts-info-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  .posts-info-container,
   .info-container {
     flex-direction: column;
     align-items: center;
   }
-
 }
