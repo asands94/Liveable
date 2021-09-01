@@ -13,6 +13,10 @@
   scrollbar-width: none;
 }
 
+.empty {
+  margin-top: var(--margin-top);
+}
+
 .posts-info-container::-webkit-scrollbar {
   display: none;
 }

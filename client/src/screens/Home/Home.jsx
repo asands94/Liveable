@@ -10,18 +10,22 @@ export default function Home(props) {
   const { posts, handleCreate, locations, currentUser, categories } = props;
   return (
     <>
-      <div className='posts-info-container'>
-        {posts.reverse().map((post, index) => {
-          return (
-            <div className='home-post-cards' key={index}>
-              {index < 10 ? (
-                <HomePostCard post={post} />
-              ) : null}
-            </div>
-          )
-        })}
-      </div>
-      <Link to='/posts'><button className='action-button'>READ MORE</button></Link>
+      {posts.length !== [] ? (
+        <>
+          <div className='posts-info-container'>
+            {posts.reverse().map((post, index) => {
+              return (
+                <div className='home-post-cards' key={index}>
+                  {index < 10 ? (
+                    <HomePostCard post={post} />
+                  ) : null}
+                </div>
+              )
+            })}
+          </div>
+          <Link to='/posts'><button className='action-button'>READ MORE</button></Link></>)
+        : <div className='posts-info-container'><div className='empty'></div></div>
+      }
       <div className='posts-info-container'>
         <HomeInfoCard />
       </div>

@@ -11,7 +11,7 @@ import Profile from '../screens/Profile/Profile';
 import NotFound from '../screens/NotFound/NotFound';
 import About from '../screens/About/About';
 import PostCreate from '../screens/PostCreate/PostCreate';
-import PostsFilter from '../screens/Posts/PostsFilter';
+import Posts from '../screens/Posts/Posts';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -84,7 +84,8 @@ export default function MainContainer(props) {
           />
         </Route>
         <Route exact path='/posts'>
-          <PostsFilter
+          <Posts
+            categories={categories}
             locations={locations}
             posts={posts}
             handleDelete={handleDelete}

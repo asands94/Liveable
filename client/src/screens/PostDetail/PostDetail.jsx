@@ -28,7 +28,7 @@ export default function PostDetails(props) {
         </CardActionArea>}
         <CardContent>
           <DialogTitle style={{ color: '#29541E', textAlign: 'center' }} id="form-dialog-title">{posts?.title}</DialogTitle>
-          <Typography style={{ color: '#29541E', fontFamily: "'Quicksand', sans-serif", fontSize: 'large' }} variant="body2" component="p">
+          <Typography style={{ color: '#29541E', fontFamily: "'Quicksand', sans-serif", fontSize: 'large', textAlign: 'center' }} variant="body2" component="p">
             {posts?.message}
           </Typography>
           {currentUser &&

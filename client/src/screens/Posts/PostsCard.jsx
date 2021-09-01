@@ -62,7 +62,7 @@ export default function ImgMediaCard(props) {
             (
               <CardContent>
                 <Typography variant="body2" component="p">
-                  {(post.message).length > 100 ? (post.message).substring(0, 100) + "..." : post.message}
+                  {(post?.message)?.length > 100 ? (post?.message)?.substring(0, 100) + "..." : post?.message}
                 </Typography>
               </CardContent>
             )}

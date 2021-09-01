@@ -46,7 +46,7 @@ export default function FormDialog(props) {
         <DialogTitle style={{ color: '#9F805B', background: '#E6E5D2', textAlign: 'center' }} id="form-dialog-title">Sign Up</DialogTitle>
         <DialogContent style={{ background: '#E6E5D2' }}>
           <TextField
-            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             name="username"
@@ -58,7 +58,7 @@ export default function FormDialog(props) {
             fullWidth
           />
           <TextField
-            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             name="email"
@@ -70,7 +70,7 @@ export default function FormDialog(props) {
             fullWidth
           />
           <TextField
-            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
             name="password"
