@@ -1,0 +1,27 @@
+.about-info-container {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+
+}
+
+.about-title {
+  margin-top: var(--margin-top);
+  color: var(--dark-accent-color);
+  font-size: xx-large;
+  padding: 0
+}
+
+.about-main-text {
+  color: var(--main-brand-color);
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.about-house {
+  position: absolute;
+  right: 27vmax;
+  bottom: 1.5vmax;
+  width: 12vw;
+  z-index: -1;
+}

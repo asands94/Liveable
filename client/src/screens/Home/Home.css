@@ -1,6 +1,51 @@
-.posts-info-container {
+.posts-info-container,
+.info-container {
   display: flex;
   justify-content: center;
-  border: solid pink;
-  width: 70vw
+  width: 70vw;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; */
+  /* seems to do nothing atm*/
+  margin: auto;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.empty {
+  margin-top: var(--margin-top);
+  /* margin-top: 500px */
+}
+
+.posts-info-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-text {
+  color: var(--light-accent-color);
+}
+
+.home-text-light {
+  color: var(--dark-accent-color);
+}
+
+.home-post-cards {
+  margin-top: var(--margin-top);
+}
+
+img.expand-icon {
+  filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
+  margin-top: 50px;
+  width: 75px
+}
+
+
+.home-footer {
+  width: 100vw;
+  position: absolute;
+  /* bottom: 0; */
+  right: 0;
+  z-index: 1;
 }

@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import Locations from '../Posts/Locations';
+import Categories from '../Posts/Categories';
 import './PostEdit.css'
+import Footer from '../../layouts/Footer'
 
 export default function PostEdit(props) {
   const [formData, setFormData] = useState({
-    // location_id: '',
-    // category: '',
+    location_id: '',
     title: '',
     message: '',
     image: ''
   });
 
-  const { handleUpdate, posts } = props;
+  const { handleUpdate, posts, locations, categories } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -23,7 +25,7 @@ export default function PostEdit(props) {
         image: post.image
       })
     }
-    if (posts.length) {
+    if (posts?.length) {
       prefillFormData()
     }
   }, [posts, id])
@@ -36,44 +38,52 @@ export default function PostEdit(props) {
     }));
   };
 
-  if (!posts.length) return "Loading..."
-
+  if (!posts) return "Loading..."
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleUpdate(id, formData);
-      }}
-    >
-      <h3>Share Your Experience</h3>
-
-      <input
-        type='text'
-        name='title'
-        value={formData.title}
-        onChange={handleChange}
-      />
-      {/* REMOVE BR TAG */}
-      < br />
-      <textarea
-        maxLength='250'
-        rows="7"
-        cols="40"
-        name='message'
-        value={formData.message}
-        onChange={handleChange} />
-      {/* REMOVE BR TAG */}
-      < br />
-      <input
-        type='text'
-        name='image'
-        value={formData.image}
-        onChange={handleChange}
-      />
-      {/* REMOVE BR TAG */}
-      < br />
-      <button>Submit</button>
-    </form>
+    <>
+      <div className='edit-form-container'>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleUpdate(id, formData);
+          }}
+        >
+          <fieldset>
+            <h3 className='form-title-edit'>Share Your Experience</h3>
+            <Locations handleChange={handleChange} locations={locations} />
+            <Categories formData={formData} handleChange={handleChange} categories={categories} />
+            <input
+              className='input'
+              type='text'
+              name='title'
+              placeholder='TITLE'
+              value={formData.title}
+              onChange={handleChange}
+            />
+            <textarea
+              className='input'
+              maxLength='250'
+              rows="7"
+              cols="40"
+              name='message'
+              placeholder='SHARE YOUR STORY'
+              value={formData.message}
+              onChange={handleChange}
+            />
+            <input
+              className='input'
+              type='text'
+              name='image'
+              placeholder='IMAGE URL'
+              value={formData.image}
+              onChange={handleChange}
+            />
+            <button className='submit-button'>Submit</button>
+          </fieldset>
+        </form >
+      </div>
+      <Footer />
+    </>
   )
 }

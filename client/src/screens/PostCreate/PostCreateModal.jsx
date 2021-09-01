@@ -5,20 +5,18 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import CardMedia from '@material-ui/core/CardMedia';
-import home from '../../assets/homefooter.svg'
-import profile from '../../assets/profile.svg'
-import email from '../../assets/email.svg'
-import lock from '../../assets/lock.svg'
+import Locations from '../Posts/Locations';
+import Categories from '../Posts/Categories';
 
-export default function FormDialog(props) {
+export default function PostCreateModal(props) {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
+    location_id: '',
+    title: '',
+    message: '',
+    image: ''
   });
-  const { handleSignUp } = props;
 
+  const { handleCreate, locations, categories } = props;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -39,45 +37,43 @@ export default function FormDialog(props) {
 
   return (
     <div>
-      <button className='nav-button' variant="outlined" color="primary" onClick={handleClickOpen}>
-        SIGN UP
+      <button className='action-button' variant="outlined" color="primary" onClick={handleClickOpen}>
+        NEW POST
       </button>
       <Dialog style={{ background: '#29541E98' }} open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle style={{ color: '#9F805B', background: '#E6E5D2', textAlign: 'center' }} id="form-dialog-title">Sign Up</DialogTitle>
+        <DialogTitle style={{ color: '#29541E', background: '#E6E5D2', textAlign: 'center' }} id="form-dialog-title">Share Your Experience</DialogTitle>
         <DialogContent style={{ background: '#E6E5D2' }}>
+          <Locations handleChange={handleChange} locations={locations} />
+          <Categories handleChange={handleChange} categories={categories} />
           <TextField
-            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
-            name="username"
-            label={<img src={profile} alt='none' />}
-            placeholder='Username'
-            type="text"
-            value={formData.username}
+            type='text'
+            name='title'
+            placeholder='TITLE'
+            value={formData.title}
             onChange={handleChange}
             fullWidth
           />
           <TextField
-            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
-            name="email"
-            label={<img src={email} alt='none' />}
-            placeholder='Email Adress'
-            type="email"
-            value={formData.email}
+            maxLength='250'
+            name='message'
+            placeholder='SHARE YOUR EXPERIENCE'
+            value={formData.message}
             onChange={handleChange}
             fullWidth
           />
           <TextField
-            // style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
+            style={{ filter: 'invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%)' }}
             autoFocus
             margin="dense"
-            name="password"
-            label={<img src={lock} alt='none' />}
-            placeholder='Password'
-            type="password"
-            value={formData.password}
+            name='image'
+            placeholder='IMAGE URL'
+            value={formData.image}
             onChange={handleChange}
             fullWidth
           />
@@ -89,19 +85,13 @@ export default function FormDialog(props) {
           <Button
             onClick={(e) => {
               e.preventDefault();
-              handleSignUp(formData);
+              handleCreate(formData);
             }}
             style={{ color: '#29541E' }}
           >
-            CREATE ACCOUNT
+            SUBMIT
           </Button>
         </DialogActions>
-        <CardMedia style={{ transform: 'rotate(0deg)', position: 'relative', bottom: 0, background: '#E6E5D2' }}
-          component="img"
-          alt='footer'
-          image={home}
-          title='footer'
-        />
       </Dialog>
     </div>
   );

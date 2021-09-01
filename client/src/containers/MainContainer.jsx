@@ -1,18 +1,17 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
+import { Redirect, Switch, Route, useHistory } from 'react-router-dom';
 
 import { getAllPosts, createPost, updatePost, deletePost } from '../services/posts';
 import { getAllCategories } from '../services/categories';
 import { getAllLocations } from '../services/locations';
 
-import Posts from '../screens/Posts/Posts';
-import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import Home from '../screens/Home/Home';
-import CategoriesAdd from '../screens/PostCreate/CategoriesAdd';
 import Profile from '../screens/Profile/Profile';
 import NotFound from '../screens/NotFound/NotFound';
 import About from '../screens/About/About';
+import PostCreate from '../screens/PostCreate/PostCreate';
+import Posts from '../screens/Posts/Posts';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([])
@@ -58,7 +57,7 @@ export default function MainContainer(props) {
         return post.id === Number(id) ? postData : post;
       })
     );
-    history.push('/posts');
+    history.push(`/profile/${currentUser.username}`);
   };
 
   const handleDelete = async (id) => {
@@ -69,24 +68,25 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
-        <Route exact path='/posts/:id/edit'>
-          <PostEdit posts={posts} handleUpdate={handleUpdate} />
-        </Route>
         <Route exact path='/posts/new'>
           <PostCreate
+            categories={categories}
             locations={locations}
             handleCreate={handleCreate}
-            categories={categories} />
+          />
         </Route>
-
-        <Route exact path='/posts/:id'>
-          <CategoriesAdd
+        <Route exact path='/posts/:id/edit'>
+          <PostEdit
             categories={categories}
+            posts={posts}
+            handleUpdate={handleUpdate}
             locations={locations}
           />
         </Route>
         <Route exact path='/posts'>
           <Posts
+            categories={categories}
+            locations={locations}
             posts={posts}
             handleDelete={handleDelete}
             currentUser={currentUser}
@@ -94,25 +94,36 @@ export default function MainContainer(props) {
         </Route>
         <Route exact path='/profile/:username'>
           <Profile
+            categories={categories}
             handleCreate={handleCreate}
             handleUpdate={handleUpdate}
             handleDelete={handleDelete}
             posts={posts}
-            currentUser={currentUser} />
+            currentUser={currentUser}
+            locations={locations}
+          />
         </Route>
         <Route exact path='/about'>
           <About
-          />
-        </Route>
-        <Route exact path='/'>
-          <Home
             locations={locations}
             posts={posts}
             handleCreate={handleCreate}
             currentUser={currentUser}
           />
         </Route>
-        <Route component={NotFound} />
+        <Route exact path='/'>
+          <Home
+            categories={categories}
+            locations={locations}
+            posts={posts}
+            handleCreate={handleCreate}
+            currentUser={currentUser}
+          />
+        </Route>
+        <Route path='/404'>
+          <NotFound />
+        </Route>
+        <Redirect to='/404' />
       </Switch>
     </div>
   )

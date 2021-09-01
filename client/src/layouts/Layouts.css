@@ -1,27 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 .nav-header {
   display: flex;
   justify-content: space-between;
-  border: solid green;
-  width: 70vw
+  width: 70vw;
+  margin: auto;
+  position: fixed;
+  background-color: var(--light-accent-color);
+  z-index: 1;
+}
+
+.scroll {
+  border-bottom: var(--main-brand-color) solid 1px;
+  right: 0;
+  left: 0;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  border: solid blue;
 }
 
-.nav-button {
+.nav-button,
+.nav-profile {
+  text-decoration: none;
   border: none;
   background: none;
-  color: var(--main-brand-color)
+  color: var(--main-brand-color);
+  font-family: 'Quicksand', sans-serif;
+  font-size: large;
+  padding-left: 10px;
+  font-weight: 600;
 }
 
-.nav-button:hover {
+.nav-profile {
+  filter: invert(21%) sepia(80%) saturate(435%) hue-rotate(62deg) brightness(99%) contrast(88%);
+}
+
+
+.nav-button:hover,
+.nav-profile:hover {
   cursor: pointer;
 }
 
 .website-name a {
   text-decoration: none;
   color: var(--main-brand-color)
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  /* bottom: -60vmax; */
+  right: 0;
+  z-index: -1;
+  margin-top: 200px
 }

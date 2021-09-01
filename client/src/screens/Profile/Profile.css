@@ -1,44 +1,49 @@
+.profile-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text-container,
 .profile-posts-container {
   display: flex;
-  justify-items: center;
+  align-items: stretch;
   justify-content: center;
-  /* grid-template-columns: 100px 100px 100px 100px 100px; */
-  /* grid-template-rows: 30px 30px 30px; */
-  /* column-gap: 120px; */
-  /* row-gap: 190px; */
-  border: solid yellow;
-  width: 70vw
+  margin-top: var(--margin-top);
+  color: var(--dark-accent-color)
 }
 
-.blah {
-  display: flex;
-  justify-content: center;
+.profile-posts-container {
+  margin-top: 0;
+  overflow: scroll;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+.profile-posts-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.profile-cards {
   position: relative;
-  border: solid purple;
-  width: 100vw
-}
 
-.blah:hover .delete,
-.blah:hover .edit {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-
-.blah:hover .edit {
-  display: flex;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 .delete,
 .edit {
-  display: none;
-  width: 50px;
+  filter: invert(52%) sepia(32%) saturate(468%) hue-rotate(353deg) brightness(94%) contrast(84%);
+}
+
+.delete:hover,
+.edit:hover {
+  cursor: pointer;
+}
+
+.post-detail-button {
+  border: none;
+  background: none;
+  padding: 0;
 }

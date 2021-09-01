@@ -1,0 +1,10 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+}
+
+.not-found-text {
+  margin-top: var(--margin-top);
+  color: var(--dark-accent-color)
+}

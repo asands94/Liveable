@@ -5,7 +5,7 @@ export default function Locations(props) {
 
   return (
     <div>
-      <select name='location_id' onChange={handleChange} defaultValue='default'>
+      <select style={{ color: '#29541E' }} name='location_id' onChange={handleChange} defaultValue='default'>
         <option disabled value='default'>
           -- Select a Location --
         </option>

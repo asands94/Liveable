@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 :root {
-  --main-bg-color: #E6E5D2;
   --main-brand-color: #29541E;
+  --main-brand-hover-color: #29541e2a;
+  --main-brand-hover-color-dark: #214b16;
   --dark-accent-color: #9F805B;
   --light-accent-color: #E6E5D2;
+  --margin-top: 8vmax;
+  --max-content-width: 1136px;
+  --page-margin: 24px;
 
 }
 
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
-  background-color: var(--main-bg-color);
+  background-color: var(--light-accent-color);
   display: flex;
   justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,4 +32,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.action-button {
+  background-color: var(--main-brand-color);
+  color: var(--light-accent-color);
+  border: var(--main-brand-color) solid;
+  padding: 25px 70px;
+  margin: 1.5vmax 0 4vmax 0;
+  font-size: large;
+  font-weight: 600;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  background-color: var(--main-brand-hover-color-dark);
+  border: var(--main-brand-hover-color-dark) solid;
 }
