@@ -1,6 +1,6 @@
 export default function Categories(props) {
 
-  const { categories, handleChange, formData } = props;
+  const { categories, handleChange } = props;
 
   return (
     <div>
@@ -9,7 +9,6 @@ export default function Categories(props) {
           <input
             name={category.name}
             onChange={handleChange}
-            // checked={formData.categories.includes(category.id)}
             value={category.id}
             type='checkbox'
           />
