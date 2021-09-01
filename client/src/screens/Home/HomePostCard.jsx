@@ -12,7 +12,6 @@ const useStyles = makeStyles({
     margin: 20,
     display: 'flex',
     color: '#29541e',
-    justifyContent: 'center'
   },
   textOnly: {
     width: '12vw',
