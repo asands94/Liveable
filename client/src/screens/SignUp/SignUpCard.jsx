@@ -63,7 +63,7 @@ export default function FormDialog(props) {
             margin="dense"
             name="email"
             label={<img src={email} alt='none' />}
-            placeholder='Email Adress'
+            placeholder='Email Address'
             type="email"
             value={formData.email}
             onChange={handleChange}
