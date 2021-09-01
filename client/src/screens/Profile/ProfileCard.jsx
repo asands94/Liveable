@@ -25,6 +25,29 @@ const useStyles = makeStyles({
       opacity: .1,
     },
   },
+
+  rootM: {
+    width: 250,
+    height: 250,
+    margin: 12,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#29541e',
+    '&:hover': {
+      background: '#29541e68',
+      color: '#29541e68',
+      cursor: 'pointer'
+    },
+  },
+
+  mediaM: {
+    width: 250,
+    height: 250,
+    '&:hover': {
+      opacity: .1,
+    },
+  },
 })
 
 export default function ProfileCard(props) {
@@ -45,10 +68,10 @@ export default function ProfileCard(props) {
   return (
     <>
       <button className='post-detail-button' onClick={handleClickOpen}>
-        <Card className={classes.root}>
+        <Card className={window.screen.width <= 900 ? classes.rootM : classes.root}>
           {post.image &&
             <CardMedia
-              className={classes.media}
+              className={window.screen.width <= 900 ? classes.mediaM : classes.media}
               component="img"
               alt={post.title}
               image={post.image}
