@@ -32,9 +32,9 @@ export default function PostDetails(props) {
             {posts?.message}
           </Typography>
           {currentUser &&
-            <div className='profile-icons'>
-              <DialogActions>
-                <Button className='edit'>
+            <div>
+              <DialogActions classes={{ root: 'profile-icons' }}>
+                <Button classes={{ root: 'edit button' }}>
                   <Link to={`/posts/${posts.id}/edit`}><img src={edit} alt='edit icon' /></Link>
                 </Button>
                 <Button className='delete' onClick={() => handleDelete(posts.id)}>
