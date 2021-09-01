@@ -49,3 +49,7 @@ img.expand-icon {
   right: 0;
   z-index: 1;
 }
+
+.about-link {
+  color: var(--dark-accent-color)
+}

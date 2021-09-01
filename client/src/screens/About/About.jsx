@@ -11,11 +11,21 @@ export default function About() {
         </div>
       </div >
       <div className='about-info-container'>
-        <ul className='about-main-text'>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        </ul>
+        <div className='about-main-text'>
+          <p>We want to encourage people to share their experience renting homes and the issues they've
+            encountered, in the hopes of getting a Rental WOF.
+          </p>
+          <p> Housing prices are at an all time high causing the majority of people to rent their housing.
+            However, many rental properties are cold, damp, and mouldy when compared to
+            owned homes and landlords have no incentive to fix those issues.</p>
+
+          <p>By instating a Rental WOF, housing standards would be set that landlords must follow in order to ensure the homes
+            they are renting out are in liveable conditions. </p>
+
+          <p>A Rental WOF would also protect landlords from from the Tenancy Tribunal.</p>
+
+        </div>
+
 
       </div>
       <img className='about-house' src={house} alt='house' />

@@ -14,14 +14,15 @@
 
 .about-main-text {
   color: var(--main-brand-color);
-  text-align: left;
-  font-size: 1.8em;
+  text-align: justify;
+  margin: 25px;
+  font-size: 1.4em;
 }
 
 .about-house {
   position: absolute;
   right: 27vmax;
-  bottom: -9.5vmax;
+  bottom: -17vmax;
   width: 12vw;
   z-index: -1;
 }

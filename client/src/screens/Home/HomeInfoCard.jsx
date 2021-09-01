@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -33,7 +34,7 @@ export default function HomeInfoCard() {
           <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>ISSUES</h4>
             <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
-              accountable do to housing security. </p>
+              accountable due to housing security. </p>
           </Typography>
         </CardContent>
       </Card>
@@ -41,8 +42,7 @@ export default function HomeInfoCard() {
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
             <h4>OUR GOAL</h4>
-            <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
-              accountable do to housing security. </p>
+            <p>We want to document New Zealanders experience with rental properties to promote change for renters rights. </p>
           </Typography>
         </CardContent>
       </Card>
@@ -50,17 +50,15 @@ export default function HomeInfoCard() {
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text' }} component="span">
             <h4>HOW YOU CAN HELP</h4>
-            <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
-              accountable do to housing security. </p>
+            <p>Create a profile and share your experience with renting! </p>
           </Typography>
         </CardContent>
       </Card>
       <Card className={classes.cardLight}>
         <CardContent>
           <Typography variant="body2" classes={{ root: 'home-text-light' }} component="span">
-            <h4>LEARN MORE</h4>
-            <p>Renters often overpay for housing that is damp and mouldy and are unable to leave or hold their landlord
-              accountable do to housing security. </p>
+            <Link className='about-link' to='/about'><h4>LEARN MORE</h4></Link>
+            <p>Learn more about renting issues and how a housing WOF is a step in the right direction.</p>
           </Typography>
         </CardContent>
       </Card>
