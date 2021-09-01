@@ -4,7 +4,6 @@ import './Home.css'
 import PostCreate from '../PostCreate/PostCreate';
 import HomeInfoCard from './HomeInfoCard';
 import Expand from '../../assets/expand.svg'
-import homeFooter from '../../assets/homefooter.svg'
 
 export default function Home(props) {
   const { posts, handleCreate, locations, currentUser, categories } = props;
