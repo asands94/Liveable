@@ -10,7 +10,7 @@ export default function PostCreate(props) {
     title: '',
     categories: [],
     message: '',
-    photo: ''
+    image: ''
   });
 
   const { handleCreate, locations, currentUser, categories } = props;
