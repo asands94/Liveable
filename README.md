@@ -270,7 +270,6 @@ P-MVP goals are to add a share button to all posts, allow users to upload images
 ## Code Showcase
 
 ```
-{
   def create
     @post = Post.new(post_params.except('categories'))
     @post.user = @current_user
@@ -282,9 +281,9 @@ P-MVP goals are to add a share button to all posts, allow users to upload images
       render json: @post.errors, status: :unprocessable_entity
     end
   end
- }
+
 ```
 
 ## Code Issues & Resolutions
 
-TBD
+Creating a many-to-many with categories and posts was difficult due to the way I needed to set up my posts controller. Luckily with help from my instructor I was able to make that relationship work so that users could now associate their posts to one or multiple categories. Ultimately, I needed to treat an array differently when trying to push that information into a table.
