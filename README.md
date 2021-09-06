@@ -271,7 +271,17 @@ P-MVP goals are to add a share button to all posts, allow users to upload images
 
 ```
 {
-  'TBD': 'we shall see'
+  def create
+    @post = Post.new(post_params.except('categories'))
+    @post.user = @current_user
+    @categories = Category.find(post_params[:categories])
+    @post.categories = @categories
+    if @post.save
+      render json: @post, status: :created
+    else
+      render json: @post.errors, status: :unprocessable_entity
+    end
+  end
  }
 ```
 
