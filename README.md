@@ -19,7 +19,7 @@
 
 ## Overview
 
-**Liveable** is a fullstack application where users can share their experiences renting homes in New Zealand. Authorized users can to create, update, and delete their posts. All users (authorized or not) can read posts that other users have written. The goal of this application is to bring awareness to the unfavorable living conditions of rental properties in hopes of promoting the idea that homes (like cars) should have a warrant of fitness. This would assure that tenants are living in quality homes at reasonable prices. This application is built with Ruby on Rails on the backend and React.js on the frontend.
+[**Liveable**](https://liveable.netlify.app/) is a fullstack application where users can share their experiences renting homes in New Zealand. Authorized users can to create, update, and delete their posts. All users (authorized or not) can read posts that other users have written. The goal of this application is to bring awareness to the unfavorable living conditions of rental properties in hopes of promoting the idea that homes (like cars) should have a warrant of fitness. This would assure that tenants are living in quality homes at reasonable prices. This application is built with Ruby on Rails on the backend and React.js on the frontend.
 
 
 <br>
