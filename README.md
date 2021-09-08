@@ -19,7 +19,7 @@
 
 ## Overview
 
-**Liveable** is a fullstack application where users can share their experiences renting homes in New Zealand. Authorized users can to create, update, and delete their posts. All users (authorized or not) can read posts that other users have written. The goal of this application is to bring awareness to the unfavorable living conditions of rental properties in hopes of promoting the idea that homes (like cars) should have a warrant of fitness. This would assure that tenants are living in quality homes at reasonable prices. This application is built with Ruby on Rails on the backend and React.js on the frontend.
+[**Liveable**](https://liveable.netlify.app/) is a fullstack application where users can share their experiences renting homes in New Zealand. Authorized users can to create, update, and delete their posts. All users (authorized or not) can read posts that other users have written. The goal of this application is to bring awareness to the unfavorable living conditions of rental properties in hopes of promoting the idea that homes (like cars) should have a warrant of fitness. This would assure that tenants are living in quality homes at reasonable prices. This application is built with Ruby on Rails on the backend and React.js on the frontend.
 
 
 <br>
@@ -270,11 +270,20 @@ P-MVP goals are to add a share button to all posts, allow users to upload images
 ## Code Showcase
 
 ```
-{
-  'TBD': 'we shall see'
- }
+  def create
+    @post = Post.new(post_params.except('categories'))
+    @post.user = @current_user
+    @categories = Category.find(post_params[:categories])
+    @post.categories = @categories
+    if @post.save
+      render json: @post, status: :created
+    else
+      render json: @post.errors, status: :unprocessable_entity
+    end
+  end
+
 ```
 
 ## Code Issues & Resolutions
 
-TBD
+Creating a many-to-many with categories and posts was difficult due to the way I needed to set up my posts controller. Luckily with help from my instructor I was able to make that relationship work so that users could now associate their posts to one or multiple categories. Ultimately, I needed to treat an array differently when trying to push that information into a table.
